@@ -3,7 +3,7 @@ import React from "react";
 import { Mail, Linkedin, Phone } from "lucide-react";
 
 const bannerUrl =
-  "https://media.licdn.com/dms/image/D4D16AQEU5k0r3Y8sDg/profile-displaybackgroundimage-shrink_200_800/0/1715971608266?e=1721865600&v=beta&t=78TunkvwQ47FeKycWdrN8M8OwQOF6KsArKqj-PRzvgg";
+  "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80";
 // Use the user's uploaded profile photo
 const photoUrl =
   "/lovable-uploads/5142b86b-21ac-49aa-b54b-6b384979f7a2.png";
@@ -33,7 +33,7 @@ const contatos = [
 
 const ProfileHeader = () => (
   <section className="relative">
-    <img src={bannerUrl} alt="Banner LinkedIn" className="w-full h-40 md:h-60 object-cover rounded-b-xl" />
+    <img src={bannerUrl} alt="Banner para transformação digital sustentável" className="w-full h-40 md:h-60 object-cover rounded-b-xl" />
     <div className="flex flex-col items-center -mt-16 md:-mt-24">
       <img
         src={photoUrl}
@@ -62,4 +62,3 @@ const ProfileHeader = () => (
 );
 
 export default ProfileHeader;
-
