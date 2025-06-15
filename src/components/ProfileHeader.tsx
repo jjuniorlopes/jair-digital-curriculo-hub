@@ -3,8 +3,8 @@ import React from "react";
 import { Mail, Linkedin, Phone } from "lucide-react";
 
 const bannerUrl =
-  "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80";
-// Use the user's uploaded profile photo
+  "/lovable-uploads/e4e242d0-bac0-4eda-ba39-1e8050334510.png";
+// Usa a foto de perfil enviada pelo usuário
 const photoUrl =
   "/lovable-uploads/5142b86b-21ac-49aa-b54b-6b384979f7a2.png";
 
@@ -33,7 +33,7 @@ const contatos = [
 
 const ProfileHeader = () => (
   <section className="relative">
-    <img src={bannerUrl} alt="Banner para transformação digital sustentável" className="w-full h-40 md:h-60 object-cover rounded-b-xl" />
+    <img src={bannerUrl} alt="Banner ESG e transformação digital sustentável" className="w-full h-40 md:h-60 object-cover rounded-b-xl" />
     <div className="flex flex-col items-center -mt-16 md:-mt-24">
       <img
         src={photoUrl}
