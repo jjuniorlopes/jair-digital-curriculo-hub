@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Mail, Linkedin, Phone } from "lucide-react";
 
@@ -15,10 +14,6 @@ const resumo = (
 );
 
 const contatos = [
-  {
-    icon: <Phone className="text-emerald-600" size={18} />,
-    text: "(71) 99288-8890"
-  },
   {
     icon: <Mail className="text-blue-600" size={18} />,
     text: "jjuniorlopes@gmail.com",
