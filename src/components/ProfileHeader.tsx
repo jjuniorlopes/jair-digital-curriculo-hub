@@ -33,7 +33,14 @@ const contatos = [
 
 const ProfileHeader = () => (
   <section className="relative">
-    <img src={bannerUrl} alt="Banner ESG e transformação digital sustentável" className="w-full h-40 md:h-60 object-cover rounded-b-xl" />
+    <div className="w-full h-40 md:h-60 overflow-hidden rounded-b-xl">
+      <img
+        src={bannerUrl}
+        alt="Banner ESG e transformação digital sustentável"
+        className="w-full h-full object-cover object-center"
+        style={{ display: 'block' }}
+      />
+    </div>
     <div className="flex flex-col items-center -mt-16 md:-mt-24">
       <img
         src={photoUrl}
