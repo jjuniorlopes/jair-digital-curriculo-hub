@@ -4,8 +4,9 @@ import { Mail, Linkedin, Phone } from "lucide-react";
 
 const bannerUrl =
   "https://media.licdn.com/dms/image/D4D16AQEU5k0r3Y8sDg/profile-displaybackgroundimage-shrink_200_800/0/1715971608266?e=1721865600&v=beta&t=78TunkvwQ47FeKycWdrN8M8OwQOF6KsArKqj-PRzvgg";
+// Use the user's uploaded profile photo
 const photoUrl =
-  "https://media.licdn.com/dms/image/D4D03AQGn4wQvvu3tRQ/profile-displayphoto-shrink_400_400/0/1715971576456?e=1721865600&v=beta&t=8X_sRDYChRJ5IcFynVLBlkSUP2e_UFGOssZAGVuKbdQ";
+  "/lovable-uploads/5142b86b-21ac-49aa-b54b-6b384979f7a2.png";
 
 const resumo = (
   <p className="text-base md:text-lg text-gray-800 max-w-2xl mx-auto">
@@ -61,3 +62,4 @@ const ProfileHeader = () => (
 );
 
 export default ProfileHeader;
+
