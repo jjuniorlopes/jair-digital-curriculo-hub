@@ -3,6 +3,7 @@ import React from "react";
 import { FileText } from "lucide-react";
 
 const publications = [
+  "Mentor do Parque Tecnológico da Bahia que conecta empresas da comunidade do Parque com especialistas para oferecer soluções práticas, troca de experiências e insights estratégicos.",
   "Idealizei cinco artigos científicos no 33º Congresso Brasileiro de Engenharia Sanitária e Ambiental (ABES).",
   "Publiquei artigos científicos em congressos da Associação Brasileira de Internet das Coisas (ABINC), no VII e VIII Congresso Baiano de Engenharia Sanitária e Ambiental, e no 34º Encontro Técnico da FENASAN (Feira Nacional de Saneamento e Meio Ambiente).",
   "Apresentei e idealizei dois artigos científicos no 21º Simpósio Luso-Brasileiro de Engenharia Sanitária e Ambiental (SILUBESA).",
