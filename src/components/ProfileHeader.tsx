@@ -8,7 +8,7 @@ const photoUrl =
   "/lovable-uploads/5142b86b-21ac-49aa-b54b-6b384979f7a2.png";
 
 const resumo = (
-  <p className="text-base md:text-lg text-gray-800 max-w-2xl mx-auto">
+  <p className="text-base md:text-lg text-gray-800 max-w-3xl mx-auto text-center leading-relaxed px-4">
     Profissional sênior com mais de <b>30 anos de experiência</b> em Tecnologia da Informação, com sólida trajetória em Engenharia de Dados e Internet das Coisas (IoT). Especialista na administração de grandes volumes de dados (Oracle, DB2, MySQL e PostreSQL) e na liderança de projetos de transformação digital. Atualmente focado em soluções de Inteligência Artificial voltada aos negócios e arquiteturas IoT LPWAN para Cidades Inteligentes e Saneamento/Meio Ambiente 4.0. Premiado por inovação e autor de diversos artigos técnicos no setor de saneamento e tecnologia.
   </p>
 );
