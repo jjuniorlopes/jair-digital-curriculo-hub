@@ -3,15 +3,9 @@ import React from "react";
 import { FileText } from "lucide-react";
 
 const publications = [
-  "Mentor do Parque Tecnológico da Bahia que conecta empresas da comunidade do Parque com especialistas para oferecer soluções práticas, troca de experiências e insights estratégicos.",
-  "Idealizei cinco artigos científicos no 33º Congresso Brasileiro de Engenharia Sanitária e Ambiental (ABES).",
-  "Publiquei artigos científicos em congressos da Associação Brasileira de Internet das Coisas (ABINC), no VII e VIII Congresso Baiano de Engenharia Sanitária e Ambiental, e no 34º Encontro Técnico da FENASAN (Feira Nacional de Saneamento e Meio Ambiente).",
-  "Apresentei e idealizei dois artigos científicos no 21º Simpósio Luso-Brasileiro de Engenharia Sanitária e Ambiental (SILUBESA).",
-  "Realizei uma apresentação de webinar no SENAI e SENAI CIMATEC sobre o tema 'Aplicabilidade e Benefícios das Tecnologias da Transformação Digital no Saneamento'.",
-  "Mediei e palestrei na 1ª e 2ª Semana do Conhecimento com o painel 'Tecnologias Habilitadoras na Transformação Digital: Construção de Novos Processos no Saneamento'.",
-  "Publiquei artigos acadêmicos no acervo digital da EMBASA.",
-  "Apresentei o artigo 'Otimizando o ORACLE em Plataforma LINUX' no III Fórum de Tecnologia das Unimed Norte/Nordeste.",
-  "Participei de congressos e workshops sobre temas tecnológicos e inovação.",
+  "Congressos Nacionais: Autor de cinco artigos no 33º Congresso da ABES, artigos na VII e VIII COBESA e publicações na Associação Brasileira de Internet das Coisas (ABINC).",
+  "Simpósios Internacionais: Autor de dois artigos no 21º Simpósio Luso-Brasileiro de Engenharia Sanitária e Ambiental (SILUBESA).",
+  "Palestras: Apresentação de webinars no SENAI CIMATEC e FIEB sobre \"Tecnologias da Transformação Digital no Saneamento\".",
 ];
 
 const PublicationsSection = () => (
