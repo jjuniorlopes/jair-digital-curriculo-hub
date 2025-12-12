@@ -5,7 +5,7 @@ const bannerUrl =
   "/lovable-uploads/e4e242d0-bac0-4eda-ba39-1e8050334510.png";
 // Usa a foto de perfil enviada pelo usuário
 const photoUrl =
-  "/lovable-uploads/5142b86b-21ac-49aa-b54b-6b384979f7a2.png";
+  "/lovable-uploads/profile-photo.png";
 
 const resumo = (
   <p className="text-base md:text-lg text-gray-800 max-w-3xl mx-auto text-center leading-relaxed px-4">
