@@ -4,7 +4,7 @@ import { Award } from "lucide-react";
 
 const awards = [
   "12/2025 - Projeto AguaGuard. Finalista entre os 7 melhores trabalhos de IA e Desafios Socioambientais da Amazônia, do I2A2 - Institut d'Intelligence Artificielle Appliquée.",
-  "10/2022 - Prêmio de 3º lugar no congresso SUCESSO/Ba",
+  "10/2022 - Prêmio de 3º lugar no congresso SUCESSO/Ba com o projeto SMART WATER – Uma Solução Integrada que implementa tecnologias inovadoras da industria 4.0",
   "05/2022 - Prêmio de 1º lugar Hackathon Semana de Conhecimento Embasa",
   "05/2004 - Prêmio de 1º lugar Fórum das Unimed Norte/Nordeste e Centro Oeste"
 ];
