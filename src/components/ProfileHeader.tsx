@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Linkedin, Phone } from "lucide-react";
+import { Mail, Linkedin, Instagram } from "lucide-react";
 
 const bannerUrl =
   "/lovable-uploads/e4e242d0-bac0-4eda-ba39-1e8050334510.png";
@@ -23,6 +23,11 @@ const contatos = [
     icon: <Linkedin className="text-blue-700" size={18} />,
     text: "LinkedIn",
     link: "https://www.linkedin.com/in/jair-costa-lopes-junior-ab6109199/"
+  },
+  {
+    icon: <Instagram className="text-pink-600" size={18} />,
+    text: "Instagram",
+    link: "https://www.instagram.com/jairlopes.inova"
   }
 ];
 
