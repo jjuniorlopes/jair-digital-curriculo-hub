@@ -3,6 +3,7 @@
 import ProfileHeader from "@/components/ProfileHeader";
 import SkillsSection from "@/components/SkillsSection";
 import AreaCardsSection from "@/components/AreaCardsSection";
+import EducationSection from "@/components/EducationSection";
 import AwardsSection from "@/components/AwardsSection";
 import PublicationsSection from "@/components/PublicationsSection";
 
@@ -12,6 +13,7 @@ const Index = () => {
       <ProfileHeader />
       <AreaCardsSection />
       <SkillsSection />
+      <EducationSection />
       <AwardsSection />
       <PublicationsSection />
       <footer className="text-xs text-center mt-10 mb-4 text-gray-500">
