@@ -9,7 +9,7 @@ import PublicationsSection from "@/components/PublicationsSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-gray-50 pb-10">
+    <div className="min-h-screen bg-white pb-10">
       <ProfileHeader />
       <AreaCardsSection />
       <SkillsSection />

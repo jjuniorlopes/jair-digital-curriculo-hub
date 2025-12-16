@@ -10,17 +10,17 @@ const publications = [
 
 const PublicationsSection = () => (
   <section className="mt-8 mb-6 max-w-3xl mx-auto">
-    <h3 className="text-xl font-bold text-blue-900 mb-5 flex items-center gap-2">
-      <FileText className="text-blue-600" /> Publicações e Apresentações
+    <h3 className="text-xl font-bold text-green-900 mb-5 flex items-center gap-2">
+      <FileText className="text-green-700" /> Publicações e Apresentações
     </h3>
     <ul className="grid gap-3">
       {publications.map((pub, idx) => (
         <li
           key={idx}
-          className="flex items-start gap-3 bg-blue-50 hover:bg-blue-100 border border-blue-100 rounded p-3 shadow transition-colors"
+          className="flex items-start gap-3 bg-green-50 hover:bg-green-100 border border-green-100 rounded p-3 shadow transition-colors"
         >
-          <FileText size={18} className="mt-1 text-blue-400" />
-          <span className="text-blue-800">{pub}</span>
+          <FileText size={18} className="mt-1 text-green-600" />
+          <span className="text-green-800">{pub}</span>
         </li>
       ))}
     </ul>
