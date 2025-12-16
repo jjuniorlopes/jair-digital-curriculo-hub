@@ -42,7 +42,7 @@ const SkillButton = ({ skill }: { skill: Skill }) => {
 
 const SkillsSection = () => (
   <section className="max-w-4xl mx-auto mt-10 mb-6">
-    <h2 className="text-xl font-bold text-emerald-900 mb-3">Habilidades</h2>
+    <h2 className="text-xl font-bold text-green-900 mb-3">Habilidades</h2>
     <div className="grid gap-2 md:grid-cols-2">
       <div>
         <h3 className="text-emerald-700 font-semibold mb-2">Soft Skills</h3>
@@ -51,7 +51,7 @@ const SkillsSection = () => (
         </div>
       </div>
       <div>
-        <h3 className="text-blue-700 font-semibold mb-2">Hard Skills</h3>
+        <h3 className="text-emerald-700 font-semibold mb-2">Hard Skills</h3>
         <div className="flex flex-wrap gap-2">
           {hardSkills.map((s) => <SkillButton key={s.label} skill={s} />)}
         </div>
