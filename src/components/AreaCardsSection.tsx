@@ -32,16 +32,16 @@ const areas = [
 
 const AreaCardsSection = () => (
   <section className="max-w-6xl mx-auto mt-10 mb-5">
-    <h2 className="text-xl font-bold text-teal-900 mb-6">Áreas de Atuação</h2>
+    <h2 className="text-xl font-bold text-green-900 mb-6">Áreas de Atuação</h2>
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {areas.map((area) => (
         <div
           key={area.title}
-          className="bg-teal-50 border border-teal-100 rounded-xl p-5 flex flex-col items-start shadow hover:scale-105 transition-transform min-h-36"
+          className="bg-green-50 border border-green-100 rounded-xl p-5 flex flex-col items-start shadow hover:scale-105 transition-transform min-h-36"
         >
           <div className="mb-2">{area.icon}</div>
-          <h4 className="font-bold text-teal-900 mb-1">{area.title}</h4>
-          <p className="text-teal-800 text-sm">{area.desc}</p>
+          <h4 className="font-bold text-green-900 mb-1">{area.title}</h4>
+          <p className="text-green-800 text-sm">{area.desc}</p>
         </div>
       ))}
     </div>

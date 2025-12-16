@@ -13,7 +13,7 @@ const educationItems = [
 const EducationSection = () => {
   return (
     <section className="max-w-3xl mx-auto mt-8 px-4">
-      <Card className="bg-white/80 shadow-lg border-0">
+      <Card className="bg-green-50 shadow-lg border border-green-100">
         <CardContent className="pt-6">
           <div className="flex items-center gap-2 mb-4">
             <GraduationCap className="text-green-700" size={24} />
