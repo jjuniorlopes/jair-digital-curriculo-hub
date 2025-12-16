@@ -30,10 +30,13 @@ const hardSkills: Skill[] = [
 
 const SkillButton = ({ skill }: { skill: Skill }) => {
   return (
-    <Button variant="secondary" className="flex flex-col items-center justify-center min-w-32 min-h-20 gap-1 hover-scale text-emerald-900" title={skill.description}>
+    <div 
+      className="flex flex-col items-center justify-center min-w-32 min-h-20 gap-1 bg-green-50 border border-green-100 rounded-lg p-3 shadow-sm hover:scale-105 transition-transform cursor-default" 
+      title={skill.description}
+    >
       <span className="text-2xl">{skill.icon}</span>
-      <span className="text-xs font-semibold mt-1">{skill.label}</span>
-    </Button>
+      <span className="text-xs font-semibold mt-1 text-green-900">{skill.label}</span>
+    </div>
   );
 };
 

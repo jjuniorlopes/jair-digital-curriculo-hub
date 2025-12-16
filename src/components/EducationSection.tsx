@@ -13,12 +13,12 @@ const educationItems = [
 const EducationSection = () => {
   return (
     <section className="max-w-3xl mx-auto mt-8 px-4">
+      <div className="flex items-center gap-2 mb-4">
+        <GraduationCap className="text-green-700" size={24} />
+        <h2 className="text-xl font-bold text-gray-900">Formação Acadêmica</h2>
+      </div>
       <Card className="bg-green-50 shadow-lg border border-green-100">
         <CardContent className="pt-6">
-          <div className="flex items-center gap-2 mb-4">
-            <GraduationCap className="text-green-700" size={24} />
-            <h2 className="text-xl font-bold text-green-800">Formação Acadêmica</h2>
-          </div>
           <ul className="space-y-3">
             {educationItems.map((item, idx) => (
               <li key={idx} className="flex items-start gap-2">
