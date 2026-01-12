@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Cloud, Database, BrainCircuit, Droplets, CheckCircle2 } from "lucide-react";
+import { Cloud, Database, BrainCircuit, Droplets, CheckCircle2, Accessibility } from "lucide-react";
 
 const areas = [
   {
@@ -27,6 +27,11 @@ const areas = [
     title: "Governança de Dados",
     icon: <CheckCircle2 className="text-green-700" size={28} />,
     desc: "Implantação de processos de governança e proteção de dados em gestão pública e privada."
+  },
+  {
+    title: "Acessibilidade",
+    icon: <Accessibility className="text-cyan-700" size={28} />,
+    desc: "Projetos inovadores para promover inclusão digital e autonomia em ambientes urbanos e institucionais."
   }
 ];
 
