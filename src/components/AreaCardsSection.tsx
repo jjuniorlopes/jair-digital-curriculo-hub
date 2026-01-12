@@ -1,6 +1,7 @@
 
 import React from "react";
-import { Cloud, Database, BrainCircuit, Droplets, CheckCircle2, Accessibility } from "lucide-react";
+import { Cloud, Database, BrainCircuit, Droplets, CheckCircle2 } from "lucide-react";
+import logoAcessibilidade from "@/assets/logo_acessibilidade.jpg";
 
 const areas = [
   {
@@ -30,7 +31,7 @@ const areas = [
   },
   {
     title: "Acessibilidade",
-    icon: <Accessibility className="text-cyan-700" size={28} />,
+    icon: <img src={logoAcessibilidade} alt="Acessibilidade" className="w-7 h-7 object-contain" />,
     desc: "Projetos inovadores para promover inclusão digital e autonomia em ambientes urbanos e institucionais."
   }
 ];
