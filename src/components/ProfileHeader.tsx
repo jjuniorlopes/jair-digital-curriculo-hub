@@ -8,9 +8,13 @@ const photoUrl =
   "/lovable-uploads/profile-photo.png";
 
 const resumo = (
-  <p className="text-base md:text-lg text-gray-800 max-w-3xl mx-auto text-center leading-relaxed px-4">
-    Profissional sênior com mais de 30 anos de experiência em Tecnologia da Informação, com sólida trajetória em Engenharia de Dados e Internet das Coisas (IoT). Especialista na administração de grandes volumes de dados (Oracle, DB2, MySQL e PostreSQL) e na liderança de projetos de transformação digital. Atualmente focado em soluções de Inteligência Artificial voltada aos negócios e arquiteturas IoT LPWAN para Cidades Inteligentes e Saneamento/Meio Ambiente 4.0. Premiado por inovação e autor de diversos artigos técnicos no setor de saneamento e tecnologia.
-  </p>
+  <div className="max-w-3xl mx-auto px-4">
+    <div className="bg-green-50 border border-green-100 rounded-lg p-4">
+      <p className="text-base md:text-lg text-green-900 text-justify leading-relaxed">
+        Profissional sênior com mais de 30 anos de experiência em Tecnologia da Informação, com atuação destacada em Engenharia de Dados e Internet das Coisas (IoT). Graduado em Processamento de Dados, possui especializações em Engenharia de IoT, Ciência de Dados (Big Data e Analytics), Banco de Dados, Análise de Sistemas e MBA em Gestão Empresarial. Tem formação internacional em Inteligência Artificial Aplicada aos Desafios Socioambientais da Amazônia se destacando entre os 7 melhores trabalhos do curso e em Agentes Inteligentes com IA Generativas, ambos pelo Instituto de Inteligência Artificial Aplicada (I2A2). Atua no desenvolvimento de soluções em IA aplicada aos negócios e em arquiteturas IoT LPWAN voltadas a Cidades Inteligentes, Acessibilidade e Saneamento/Meio Ambiente. Premiado por inovação e autor de artigos técnicos nas áreas de saneamento e tecnologia.
+      </p>
+    </div>
+  </div>
 );
 
 const contatos = [
