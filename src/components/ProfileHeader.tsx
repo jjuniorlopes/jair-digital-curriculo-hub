@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Linkedin, Instagram } from "lucide-react";
+import { Mail, Linkedin, Instagram, MessageCircle } from "lucide-react";
 
 const bannerUrl =
   "/lovable-uploads/e4e242d0-bac0-4eda-ba39-1e8050334510.png";
@@ -32,6 +32,11 @@ const contatos = [
     icon: <Instagram className="text-pink-600" size={18} />,
     text: "Instagram",
     link: "https://www.instagram.com/jairlopes.inova"
+  },
+  {
+    icon: <MessageCircle className="text-green-500" size={18} />,
+    text: "WhatsApp",
+    link: "https://wa.me/5571992888890"
   }
 ];
 
