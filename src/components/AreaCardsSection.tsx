@@ -38,7 +38,7 @@ const areas = [
   },
   {
     title: "Acessibilidade",
-    icon: <HeartHandshake className="text-cyan-700" size={28} />,
+    icon: <HeartHandshake className={tealIcon} size={28} />,
     desc: "Projetos inovadores para promover inclusão digital e autonomia em ambientes urbanos e institucionais.",
     color: "border-cyan-200 hover:border-cyan-400"
   }
