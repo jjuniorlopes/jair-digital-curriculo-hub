@@ -16,7 +16,7 @@ const educationItems = [
 
 const EducationSection = () => (
   <Card className="mb-8 shadow-lg border-0 animate-slide-up" style={{ animationDelay: '0.35s' }}>
-    <div className="bg-gradient-to-r from-orange-600 to-orange-700 text-white rounded-t-lg p-4">
+    <div className="bg-[#1a7a7a] text-white rounded-t-lg p-4">
       <h2 className="text-xl font-bold flex items-center gap-2">
         <GraduationCap size={24} />
         Formação Acadêmica
