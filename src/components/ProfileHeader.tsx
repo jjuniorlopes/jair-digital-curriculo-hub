@@ -4,15 +4,15 @@ import { Mail, Linkedin, Instagram, MessageCircle, MapPin } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-const bannerUrl = "/lovable-uploads/painel_jair.png";
+const bannerUrl = "/lovable-uploads/banner_Jair.png";
 const photoUrl = "/lovable-uploads/profile-photo.png";
 
 const resumo = `Profissional sênior com mais de 30 anos de experiência em Tecnologia da Informação, com atuação destacada em Engenharia de Dados e Internet das Coisas (IoT). Graduado em Processamento de Dados, possui especializações em Engenharia de IoT, Ciência de Dados (Big Data e Analytics), Banco de Dados, Análise de Sistemas e MBA em Gestão Empresarial. Tem curso internacional em Inteligência Artificial Aplicada aos Desafios Socioambientais da Amazônia se destacando entre os 7 melhores trabalhos do curso e em Agentes Inteligentes com IA Generativas, ambos pelo Instituto de Inteligência Artificial Aplicada (I2A2). Atua no desenvolvimento de soluções em IA aplicada aos negócios e em arquiteturas IoT LPWAN voltadas a Cidades Inteligentes, Acessibilidade e Saneamento/Meio Ambiente. Premiado por inovação e autor de artigos técnicos nas áreas de saneamento e tecnologia.`;
 
 const ProfileHeader = () => (
   <div className="animate-fade-in">
-    {/* Banner */}
-    <Card className="mb-8 shadow-lg border-0 overflow-hidden">
+    {/* Banner with profile photo overlay */}
+    <Card className="mb-8 shadow-lg border-0 overflow-hidden relative">
       <div className="w-full overflow-hidden">
         <img
           src={bannerUrl}
@@ -20,31 +20,34 @@ const ProfileHeader = () => (
           className="w-full h-auto object-cover"
         />
       </div>
+      {/* Profile photo overlapping banner */}
+      <div className="absolute bottom-0 left-6 md:left-10 translate-y-1/2 z-10">
+        <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden shadow-xl border-4 border-white transition-transform duration-500 hover:scale-110">
+          <img
+            src={photoUrl}
+            alt="Foto de Jair Costa Lopes Junior"
+            className="w-full h-full object-cover"
+            style={{ backgroundColor: '#e2e8f0' }}
+          />
+        </div>
+      </div>
     </Card>
 
-    {/* Profile Card */}
+    {/* Profile Info Card */}
     <Card className="mb-8 shadow-lg border-0 overflow-hidden animate-fade-in" style={{ animationDelay: '0.1s' }}>
-      <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 p-8 text-white">
-        <div className="flex flex-col md:flex-row items-center gap-6">
-          <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-white/30 transition-transform duration-500 hover:scale-110 hover:border-white/60 flex-shrink-0">
-            <img
-              src={photoUrl}
-              alt="Foto de Jair Costa Lopes Junior"
-              className="w-full h-full object-cover"
-              style={{ backgroundColor: '#e2e8f0' }}
-            />
-          </div>
+      <div className="bg-gradient-to-r from-teal-700 via-teal-800 to-blue-900 p-8 pt-12 md:pt-8 text-white">
+        <div className="flex flex-col md:flex-row items-center gap-6 md:pl-40">
           <div className="text-center md:text-left flex-1">
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Jair Costa Lopes Junior</h1>
-            <p className="text-xl text-blue-100 mb-4">
+            <p className="text-xl text-teal-100 mb-4">
               Consultor em Tecnologias Emergentes | IoT | Data Engineering | AI
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-              <div className="flex items-center gap-2 transition-colors duration-300 hover:text-blue-200">
+              <div className="flex items-center gap-2 transition-colors duration-300 hover:text-teal-200">
                 <MapPin size={16} />
                 <span>Salvador - BA, Brasil</span>
               </div>
-              <div className="flex items-center gap-2 transition-colors duration-300 hover:text-blue-200">
+              <div className="flex items-center gap-2 transition-colors duration-300 hover:text-teal-200">
                 <Mail size={16} />
                 <span>jjuniorlopes@gmail.com</span>
               </div>
@@ -52,15 +55,14 @@ const ProfileHeader = () => (
           </div>
           <div className="flex flex-col gap-3">
             <Button
-              className="bg-white text-blue-600 hover:bg-blue-50 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="bg-white text-teal-700 hover:bg-teal-50 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               onClick={() => window.open('https://www.linkedin.com/in/jair-costa-lopes-junior-ab6109199/', '_blank')}
             >
               <Linkedin size={20} className="mr-2" />
               LinkedIn
             </Button>
             <Button
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-blue-600 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="bg-pink-500 hover:bg-pink-600 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
               onClick={() => window.open('https://www.instagram.com/jairlopes.inova', '_blank')}
             >
               <Instagram size={20} className="mr-2" />
