@@ -27,7 +27,7 @@ const PublicationsSection = () => (
                 {pub.icon}
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-semibold text-gray-800 mb-2 transition-colors duration-300 group-hover:text-indigo-700">{pub.title}</h3>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2 transition-colors duration-300 group-hover:text-[#1a7a7a]">{pub.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-3">{pub.desc}</p>
                 <div className="flex flex-wrap gap-2">
                   {pub.tags.map((tag) => (
