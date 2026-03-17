@@ -4,7 +4,7 @@ import { Mail, Linkedin, Instagram, MessageCircle, MapPin } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-const bannerUrl = "/lovable-uploads/banner_Jair.png";
+const bannerUrl = "/lovable-uploads/Banner_jair_limpo.png";
 const photoUrl = "/lovable-uploads/profile-photo.png";
 
 const resumo = `Profissional sênior com mais de 30 anos de experiência em Tecnologia da Informação, com atuação destacada em Engenharia de Dados e Internet das Coisas (IoT). Graduado em Processamento de Dados, possui especializações em Engenharia de IoT, Ciência de Dados (Big Data e Analytics), Banco de Dados, Análise de Sistemas e MBA em Gestão Empresarial. Tem curso internacional em Inteligência Artificial Aplicada aos Desafios Socioambientais da Amazônia se destacando entre os 7 melhores trabalhos do curso e em Agentes Inteligentes com IA Generativas, ambos pelo Instituto de Inteligência Artificial Aplicada (I2A2). Atua no desenvolvimento de soluções em IA aplicada aos negócios e em arquiteturas IoT LPWAN voltadas a Cidades Inteligentes, Acessibilidade e Saneamento/Meio Ambiente. Premiado por inovação e autor de artigos técnicos nas áreas de saneamento e tecnologia.`;
