@@ -25,7 +25,7 @@ const EducationSection = () => (
     <CardContent className="p-6">
       <div className="space-y-4">
         {educationItems.map((item, idx) => (
-          <div key={idx} className="border-l-4 border-orange-500 pl-6 pb-4 last:pb-0 transition-all duration-300 hover:border-orange-400 hover:bg-orange-50/30 rounded-r-lg hover:pl-8">
+          <div key={idx} className="border-l-4 border-[#1a7a7a] pl-6 pb-4 last:pb-0 transition-all duration-300 hover:border-teal-400 hover:bg-teal-50/30 rounded-r-lg hover:pl-8">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-1">
               <div className="flex items-start gap-2">
                 <CheckCircle2 size={18} className="text-green-500 mt-1 flex-shrink-0" />
