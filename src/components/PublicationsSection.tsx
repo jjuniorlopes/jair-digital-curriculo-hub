@@ -12,7 +12,7 @@ const publications = [
 
 const PublicationsSection = () => (
   <Card className="mb-8 shadow-lg border-0 animate-slide-up" style={{ animationDelay: '0.45s' }}>
-    <div className="bg-gradient-to-r from-indigo-600 to-indigo-700 text-white rounded-t-lg p-4">
+    <div className="bg-[#1a7a7a] text-white rounded-t-lg p-4">
       <h2 className="text-xl font-bold flex items-center gap-2">
         <FileText size={24} />
         Publicações e Apresentações
