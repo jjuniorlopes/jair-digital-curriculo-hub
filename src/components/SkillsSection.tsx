@@ -64,7 +64,7 @@ const SkillsSection = () => {
                     {skill.technologies && (
                       <div className="flex flex-wrap gap-2">
                         {skill.technologies.map((tech) => (
-                          <Badge key={tech} variant="outline" className="border-green-200 text-green-700 transition-all duration-200 hover:bg-green-50 hover:scale-105">
+                          <Badge key={tech} variant="outline" className="border-teal-200 text-[#1a7a7a] transition-all duration-200 hover:bg-teal-50 hover:scale-105">
                             {tech}
                           </Badge>
                         ))}
