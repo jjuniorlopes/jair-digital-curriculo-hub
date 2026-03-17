@@ -42,7 +42,7 @@ const SkillsSection = () => {
     <div className="grid md:grid-cols-2 gap-8 mb-8">
       {/* Hard Skills */}
       <Card className="shadow-lg border-0 animate-fade-in" style={{ animationDelay: '0.25s' }}>
-        <div className="bg-gradient-to-r from-green-600 to-green-700 text-white rounded-t-lg p-4">
+        <div className="bg-[#1a7a7a] text-white rounded-t-lg p-4">
           <h2 className="text-xl font-bold">Hard Skills</h2>
         </div>
         <CardContent className="p-6">
