@@ -14,7 +14,7 @@ const areas = [
   },
   {
     title: "Engenharia de Dados",
-    icon: <Database className="text-blue-700" size={28} />,
+    icon: <Database className={tealIcon} size={28} />,
     desc: "Tratamento, integração e análise de dados utilizando bancos Oracle, MySQL, PostgreSQL e DB2.",
     color: "border-blue-200 hover:border-blue-400"
   },
