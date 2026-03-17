@@ -31,7 +31,7 @@ const AwardsSection = () => (
                 <div className="flex items-center gap-2 mb-1">
                   <h3 className="font-semibold text-gray-800 transition-colors duration-300 group-hover:text-[#1a7a7a]">{award.title}</h3>
                 </div>
-                <Badge variant="outline" className="border-amber-200 text-amber-700 mb-2">{award.date}</Badge>
+                <Badge variant="outline" className="border-teal-200 text-[#1a7a7a] mb-2">{award.date}</Badge>
                 <p className="text-gray-600 text-sm leading-relaxed">{award.desc}</p>
               </div>
             </div>

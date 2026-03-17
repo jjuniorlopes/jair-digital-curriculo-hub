@@ -31,7 +31,7 @@ const PublicationsSection = () => (
                 <p className="text-gray-600 text-sm leading-relaxed mb-3">{pub.desc}</p>
                 <div className="flex flex-wrap gap-2">
                   {pub.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary" className="bg-indigo-100 text-indigo-800 transition-all duration-200 hover:bg-indigo-200 hover:scale-105">
+                    <Badge key={tag} variant="secondary" className="bg-teal-100 text-[#1a7a7a] transition-all duration-200 hover:bg-teal-200 hover:scale-105">
                       {tag}
                     </Badge>
                   ))}

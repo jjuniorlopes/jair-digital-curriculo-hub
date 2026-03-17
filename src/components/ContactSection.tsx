@@ -14,7 +14,7 @@ const contactInfo = [
 
 const ContactSection = () => (
   <Card className="shadow-lg border-0 animate-slide-up" style={{ animationDelay: '0.5s' }}>
-    <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-t-lg p-4">
+    <div className="bg-[#1a7a7a] text-white rounded-t-lg p-4">
       <h2 className="text-xl font-bold">Entre em Contato</h2>
     </div>
     <CardContent className="p-6">

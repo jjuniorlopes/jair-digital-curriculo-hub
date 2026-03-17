@@ -83,7 +83,7 @@ const ProfileHeader = () => (
 
     {/* Resumo Profissional */}
     <Card className="mb-8 shadow-lg border-0 animate-fade-in" style={{ animationDelay: '0.15s' }}>
-      <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-t-lg p-4">
+      <div className="bg-[#1a7a7a] text-white rounded-t-lg p-4">
         <h2 className="text-2xl font-bold">Resumo Profissional</h2>
       </div>
       <div className="p-6">

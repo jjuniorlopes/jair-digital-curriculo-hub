@@ -86,7 +86,7 @@ const SkillsSection = () => {
         <CardContent className="p-6">
           <div className="space-y-4">
             {softSkills.map((skill) => (
-              <div key={skill.name} className="border rounded-lg p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 hover:border-purple-200">
+              <div key={skill.name} className="border rounded-lg p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 hover:border-teal-200">
                 <Button variant="ghost" className="w-full justify-between p-0 h-auto" onClick={() => toggleSkill(skill.name)}>
                   <div className="flex items-center gap-3">
                     <span className={`transition-transform duration-300 ${expandedSkill === skill.name ? 'scale-110' : ''}`}>{skill.icon}</span>

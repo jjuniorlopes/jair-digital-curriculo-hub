@@ -59,7 +59,7 @@ const AreaCardsSection = () => (
             <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-3 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
               {area.icon}
             </div>
-            <h4 className="font-bold text-gray-800 mb-1 transition-colors duration-300 group-hover:text-teal-700">{area.title}</h4>
+            <h4 className="font-bold text-gray-800 mb-1 transition-colors duration-300 group-hover:text-[#1a7a7a]">{area.title}</h4>
             <p className="text-gray-600 text-sm leading-relaxed">{area.desc}</p>
           </div>
         ))}

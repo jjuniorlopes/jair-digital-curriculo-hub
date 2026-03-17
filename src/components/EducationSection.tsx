@@ -31,7 +31,7 @@ const EducationSection = () => (
                 <CheckCircle2 size={18} className="text-green-500 mt-1 flex-shrink-0" />
                 <h3 className="text-lg font-semibold text-gray-800">{item.title}</h3>
               </div>
-              <Badge variant="outline" className="border-orange-200 text-orange-700 mt-1 md:mt-0 w-fit">
+              <Badge variant="outline" className="border-teal-200 text-[#1a7a7a] mt-1 md:mt-0 w-fit">
                 {item.type}
               </Badge>
             </div>
