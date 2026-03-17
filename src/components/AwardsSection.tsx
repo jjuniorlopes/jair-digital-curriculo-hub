@@ -13,7 +13,7 @@ const awards = [
 
 const AwardsSection = () => (
   <Card className="mb-8 shadow-lg border-0 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-    <div className="bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-t-lg p-4">
+    <div className="bg-[#1a7a7a] text-white rounded-t-lg p-4">
       <h2 className="text-xl font-bold flex items-center gap-2">
         <Trophy size={24} />
         Premiações e Reconhecimentos
