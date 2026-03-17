@@ -5,9 +5,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const publications = [
-  { icon: <FileText className="text-indigo-600" size={24} />, title: "Congressos Nacionais", desc: "Autor de cinco artigos no 33º Congresso da ABES, artigos na VII e VIII COBESA e publicações na Associação Brasileira de Internet das Coisas (ABINC).", tags: ["ABES", "COBESA", "ABINC"] },
-  { icon: <BookOpen className="text-indigo-600" size={24} />, title: "Simpósios Internacionais", desc: "Autor de dois artigos no 21º Simpósio Luso-Brasileiro de Engenharia Sanitária e Ambiental (SILUBESA).", tags: ["SILUBESA", "Internacional"] },
-  { icon: <Mic className="text-indigo-600" size={24} />, title: "Palestras", desc: "Apresentação de webinars no SENAI CIMATEC e FIEB sobre 'Tecnologias da Transformação Digital no Saneamento'.", tags: ["SENAI CIMATEC", "FIEB", "Webinar"] },
+  { icon: <FileText className="text-[#1a7a7a]" size={24} />, title: "Congressos Nacionais", desc: "Autor de cinco artigos no 33º Congresso da ABES, artigos na VII e VIII COBESA e publicações na Associação Brasileira de Internet das Coisas (ABINC).", tags: ["ABES", "COBESA", "ABINC"] },
+  { icon: <BookOpen className="text-[#1a7a7a]" size={24} />, title: "Simpósios Internacionais", desc: "Autor de dois artigos no 21º Simpósio Luso-Brasileiro de Engenharia Sanitária e Ambiental (SILUBESA).", tags: ["SILUBESA", "Internacional"] },
+  { icon: <Mic className="text-[#1a7a7a]" size={24} />, title: "Palestras", desc: "Apresentação de webinars no SENAI CIMATEC e FIEB sobre 'Tecnologias da Transformação Digital no Saneamento'.", tags: ["SENAI CIMATEC", "FIEB", "Webinar"] },
 ];
 
 const PublicationsSection = () => (
