@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const areas = [
   {
     title: "Internet das Coisas (IoT)",
-    icon: <Cloud className="text-indigo-600" size={28} />,
+    icon: <Cloud className={tealIcon} size={28} />,
     desc: "Projetos de sensoriamento inteligente, automação e IoT conectando dispositivos ao mundo digital.",
     color: "border-indigo-200 hover:border-indigo-400"
   },
