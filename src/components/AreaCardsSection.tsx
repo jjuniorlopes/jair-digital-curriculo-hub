@@ -20,7 +20,7 @@ const areas = [
   },
   {
     title: "Inteligência Artificial",
-    icon: <BrainCircuit className="text-purple-700" size={28} />,
+    icon: <BrainCircuit className={tealIcon} size={28} />,
     desc: "Aplicação de IA para inovação, automação e insights valiosos em projetos digitais.",
     color: "border-purple-200 hover:border-purple-400"
   },
