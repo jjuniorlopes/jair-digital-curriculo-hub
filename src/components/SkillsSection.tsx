@@ -22,13 +22,13 @@ const hardSkills: Skill[] = [
 ];
 
 const softSkills: Skill[] = [
-  { name: "Comunicação", icon: <Lightbulb className="text-purple-600" size={24} />, description: "Habilidade de transmitir ideias com clareza para diferentes audiências." },
-  { name: "Liderança", icon: <Users className="text-purple-600" size={24} />, description: "Gestão e motivação de equipes multidisciplinares." },
-  { name: "Autoconhecimento", icon: <BarChart4 className="text-purple-600" size={24} />, description: "Capacidade de autoavaliação e desenvolvimento pessoal." },
-  { name: "Gestão de Projetos", icon: <Workflow className="text-purple-600" size={24} />, description: "Planejamento, execução e liderança de projetos tecnológicos." },
-  { name: "Mentalidade de Equipe", icon: <Users className="text-purple-600" size={24} />, description: "Trabalho colaborativo e harmonia em grupo." },
-  { name: "Vontade de Aprender", icon: <BookOpen className="text-purple-600" size={24} />, description: "Busca constante de atualização e novas tecnologias." },
-  { name: "Gestão do Tempo", icon: <Clock4 className="text-purple-600" size={24} />, description: "Organização e disciplina no cumprimento de tarefas." }
+  { name: "Comunicação", icon: <Lightbulb className="text-[#1a7a7a]" size={24} />, description: "Habilidade de transmitir ideias com clareza para diferentes audiências." },
+  { name: "Liderança", icon: <Users className="text-[#1a7a7a]" size={24} />, description: "Gestão e motivação de equipes multidisciplinares." },
+  { name: "Autoconhecimento", icon: <BarChart4 className="text-[#1a7a7a]" size={24} />, description: "Capacidade de autoavaliação e desenvolvimento pessoal." },
+  { name: "Gestão de Projetos", icon: <Workflow className="text-[#1a7a7a]" size={24} />, description: "Planejamento, execução e liderança de projetos tecnológicos." },
+  { name: "Mentalidade de Equipe", icon: <Users className="text-[#1a7a7a]" size={24} />, description: "Trabalho colaborativo e harmonia em grupo." },
+  { name: "Vontade de Aprender", icon: <BookOpen className="text-[#1a7a7a]" size={24} />, description: "Busca constante de atualização e novas tecnologias." },
+  { name: "Gestão do Tempo", icon: <Clock4 className="text-[#1a7a7a]" size={24} />, description: "Organização e disciplina no cumprimento de tarefas." }
 ];
 
 const SkillsSection = () => {
