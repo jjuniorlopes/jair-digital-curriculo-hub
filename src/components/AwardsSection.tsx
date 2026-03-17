@@ -22,10 +22,10 @@ const AwardsSection = () => (
     <CardContent className="p-6">
       <div className="grid md:grid-cols-2 gap-6">
         {awards.map((award, idx) => (
-          <div key={idx} className="group border rounded-lg p-5 bg-gradient-to-br from-white to-gray-50 transition-all duration-400 hover:shadow-xl hover:-translate-y-1 hover:border-amber-200">
+          <div key={idx} className="group border rounded-lg p-5 bg-gradient-to-br from-white to-gray-50 transition-all duration-400 hover:shadow-xl hover:-translate-y-1 hover:border-teal-200">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:bg-amber-200 group-hover:scale-110 flex-shrink-0">
-                <Award className="text-amber-600" size={24} />
+              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:bg-teal-200 group-hover:scale-110 flex-shrink-0">
+                <Award className="text-[#1a7a7a]" size={24} />
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-1">
