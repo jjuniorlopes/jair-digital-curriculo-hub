@@ -1,63 +1,113 @@
 
-import React from "react";
-import { Lightbulb, Users, BarChart4, Database, Cloud, Workflow, Award, BrainCircuit, Layers3, Clock4, BookOpen, TrendingUp } from "lucide-react";
+import React, { useState } from "react";
+import { Lightbulb, Users, BarChart4, Database, Cloud, Workflow, Award, BrainCircuit, Layers3, Clock4, BookOpen, TrendingUp, ChevronDown } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 type Skill = {
-  label: string;
+  name: string;
   icon: React.ReactNode;
   description: string;
+  technologies?: string[];
 };
 
-const softSkills: Skill[] = [
-  { label: "Comunicação", icon: <Lightbulb className="text-yellow-500" />, description: "Habilidade de transmitir ideias com clareza" },
-  { label: "Liderança", icon: <Users className="text-cyan-600" />, description: "Gestão e motivação de equipes" },
-  { label: "Autoconhecimento", icon: <BarChart4 className="text-emerald-600" />, description: "Capacidade de autoavaliação e desenvolvimento pessoal" },
-  { label: "Gestão de Projetos", icon: <Database className="text-blue-600" />, description: "Planejamento, execução e liderança de projetos" },
-  { label: "Mentalidade de Equipe", icon: <Workflow className="text-green-600" />, description: "Trabalho colaborativo e harmonia em grupo" },
-  { label: "Vontade de Aprender", icon: <BookOpen className="text-orange-600" />, description: "Busca constante de atualização" },
-  { label: "Gestão do Tempo", icon: <Clock4 className="text-pink-600" />, description: "Organização e disciplina no cumprimento de tarefas" }
-];
-
 const hardSkills: Skill[] = [
-  { label: "Engenharia de Dados", icon: <Database className="text-blue-600" />, description: "Domínio em Oracle, MySQL, PostgreSQL e DB2" },
-  { label: "Internet das Coisas (IoT)", icon: <Cloud className="text-indigo-600" />, description: "Sensoriamento inteligente e LPWAN" },
-  { label: "Inteligência Artificial", icon: <BrainCircuit className="text-purple-600" />, description: "IA para análise e inovação de dados" },
-  { label: "Projetos Inovadores", icon: <Award className="text-teal-600" />, description: "Experiência premiada em projetos" },
-  { label: "ERP/BI", icon: <TrendingUp className="text-blue-600" />, description: "Integração e gestão de dados corporativos" },
-  { label: "Modelagem BPM", icon: <Layers3 className="text-emerald-600" />, description: "Noções de modelagem de processos" }
+  { name: "Engenharia de Dados", icon: <Database className="text-green-600" size={24} />, description: "Domínio em Oracle, MySQL, PostgreSQL e DB2", technologies: ["Oracle", "MySQL", "PostgreSQL", "DB2", "ETL"] },
+  { name: "Internet das Coisas (IoT)", icon: <Cloud className="text-green-600" size={24} />, description: "Sensoriamento inteligente e LPWAN", technologies: ["LoRaWAN", "MQTT", "Sensores", "Arduino", "Raspberry Pi"] },
+  { name: "Inteligência Artificial", icon: <BrainCircuit className="text-green-600" size={24} />, description: "IA para análise e inovação de dados", technologies: ["Machine Learning", "Python", "TensorFlow", "NLP"] },
+  { name: "Projetos Inovadores", icon: <Award className="text-green-600" size={24} />, description: "Experiência premiada em projetos", technologies: ["Smart Water", "AguaGuard", "IoT LPWAN"] },
+  { name: "ERP/BI", icon: <TrendingUp className="text-green-600" size={24} />, description: "Integração e gestão de dados corporativos", technologies: ["Power BI", "Tableau", "Grafana", "SQL"] },
+  { name: "Modelagem BPM", icon: <Layers3 className="text-green-600" size={24} />, description: "Noções de modelagem de processos", technologies: ["BPM", "BPMN", "Processos"] }
 ];
 
-const SkillButton = ({ skill }: { skill: Skill }) => {
+const softSkills: Skill[] = [
+  { name: "Comunicação", icon: <Lightbulb className="text-purple-600" size={24} />, description: "Habilidade de transmitir ideias com clareza para diferentes audiências." },
+  { name: "Liderança", icon: <Users className="text-purple-600" size={24} />, description: "Gestão e motivação de equipes multidisciplinares." },
+  { name: "Autoconhecimento", icon: <BarChart4 className="text-purple-600" size={24} />, description: "Capacidade de autoavaliação e desenvolvimento pessoal." },
+  { name: "Gestão de Projetos", icon: <Workflow className="text-purple-600" size={24} />, description: "Planejamento, execução e liderança de projetos tecnológicos." },
+  { name: "Mentalidade de Equipe", icon: <Users className="text-purple-600" size={24} />, description: "Trabalho colaborativo e harmonia em grupo." },
+  { name: "Vontade de Aprender", icon: <BookOpen className="text-purple-600" size={24} />, description: "Busca constante de atualização e novas tecnologias." },
+  { name: "Gestão do Tempo", icon: <Clock4 className="text-purple-600" size={24} />, description: "Organização e disciplina no cumprimento de tarefas." }
+];
+
+const SkillsSection = () => {
+  const [expandedSkill, setExpandedSkill] = useState<string | null>(null);
+
+  const toggleSkill = (name: string) => {
+    setExpandedSkill(expandedSkill === name ? null : name);
+  };
+
   return (
-    <div 
-      className="flex flex-col items-center justify-center min-w-32 min-h-20 gap-1 bg-green-50 border border-green-100 rounded-lg p-3 shadow-sm hover:scale-105 transition-transform cursor-default" 
-      title={skill.description}
-    >
-      <span className="text-2xl">{skill.icon}</span>
-      <span className="text-xs font-semibold mt-1 text-green-900">{skill.label}</span>
+    <div className="grid md:grid-cols-2 gap-8 mb-8">
+      {/* Hard Skills */}
+      <Card className="shadow-lg border-0 animate-fade-in" style={{ animationDelay: '0.25s' }}>
+        <div className="bg-gradient-to-r from-green-600 to-green-700 text-white rounded-t-lg p-4">
+          <h2 className="text-xl font-bold">Hard Skills</h2>
+        </div>
+        <CardContent className="p-6">
+          <div className="space-y-4">
+            {hardSkills.map((skill) => (
+              <div key={skill.name} className="border rounded-lg p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 hover:border-green-200">
+                <Button variant="ghost" className="w-full justify-between p-0 h-auto" onClick={() => toggleSkill(skill.name)}>
+                  <div className="flex items-center gap-3">
+                    <span className={`transition-transform duration-300 ${expandedSkill === skill.name ? 'scale-110' : ''}`}>{skill.icon}</span>
+                    <span className="font-semibold text-left">{skill.name}</span>
+                  </div>
+                  <div className={`transition-transform duration-300 ${expandedSkill === skill.name ? 'rotate-180' : ''}`}>
+                    <ChevronDown size={20} />
+                  </div>
+                </Button>
+                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${expandedSkill === skill.name ? 'max-h-60 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
+                  <div className="pl-10">
+                    <p className="text-gray-600 mb-3">{skill.description}</p>
+                    {skill.technologies && (
+                      <div className="flex flex-wrap gap-2">
+                        {skill.technologies.map((tech) => (
+                          <Badge key={tech} variant="outline" className="border-green-200 text-green-700 transition-all duration-200 hover:bg-green-50 hover:scale-105">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Soft Skills */}
+      <Card className="shadow-lg border-0 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+        <div className="bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-t-lg p-4">
+          <h2 className="text-xl font-bold">Soft Skills</h2>
+        </div>
+        <CardContent className="p-6">
+          <div className="space-y-4">
+            {softSkills.map((skill) => (
+              <div key={skill.name} className="border rounded-lg p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 hover:border-purple-200">
+                <Button variant="ghost" className="w-full justify-between p-0 h-auto" onClick={() => toggleSkill(skill.name)}>
+                  <div className="flex items-center gap-3">
+                    <span className={`transition-transform duration-300 ${expandedSkill === skill.name ? 'scale-110' : ''}`}>{skill.icon}</span>
+                    <span className="font-semibold text-left">{skill.name}</span>
+                  </div>
+                  <div className={`transition-transform duration-300 ${expandedSkill === skill.name ? 'rotate-180' : ''}`}>
+                    <ChevronDown size={20} />
+                  </div>
+                </Button>
+                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${expandedSkill === skill.name ? 'max-h-40 opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
+                  <div className="pl-10">
+                    <p className="text-gray-600">{skill.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };
-
-const SkillsSection = () => (
-  <section className="max-w-4xl mx-auto mt-10 mb-6">
-    <h2 className="text-xl font-bold text-green-900 mb-3">Habilidades</h2>
-    <div className="grid gap-2 md:grid-cols-2">
-      <div>
-        <h3 className="text-emerald-700 font-semibold mb-2">Soft Skills</h3>
-        <div className="flex flex-wrap gap-2">
-          {softSkills.map((s) => <SkillButton key={s.label} skill={s} />)}
-        </div>
-      </div>
-      <div>
-        <h3 className="text-emerald-700 font-semibold mb-2">Hard Skills</h3>
-        <div className="flex flex-wrap gap-2">
-          {hardSkills.map((s) => <SkillButton key={s.label} skill={s} />)}
-        </div>
-      </div>
-    </div>
-  </section>
-);
 
 export default SkillsSection;
