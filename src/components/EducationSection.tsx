@@ -16,7 +16,7 @@ const educationItems = [
 
 const EducationSection = () => (
   <Card className="mb-8 shadow-lg border-0 animate-slide-up" style={{ animationDelay: '0.35s' }}>
-    <div className="bg-gradient-to-r from-orange-600 to-orange-700 text-white rounded-t-lg p-4">
+    <div className="bg-[#1a7a7a] text-white rounded-t-lg p-4">
       <h2 className="text-xl font-bold flex items-center gap-2">
         <GraduationCap size={24} />
         Formação Acadêmica
@@ -25,13 +25,13 @@ const EducationSection = () => (
     <CardContent className="p-6">
       <div className="space-y-4">
         {educationItems.map((item, idx) => (
-          <div key={idx} className="border-l-4 border-orange-500 pl-6 pb-4 last:pb-0 transition-all duration-300 hover:border-orange-400 hover:bg-orange-50/30 rounded-r-lg hover:pl-8">
+          <div key={idx} className="border-l-4 border-[#1a7a7a] pl-6 pb-4 last:pb-0 transition-all duration-300 hover:border-teal-400 hover:bg-teal-50/30 rounded-r-lg hover:pl-8">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-1">
               <div className="flex items-start gap-2">
                 <CheckCircle2 size={18} className="text-green-500 mt-1 flex-shrink-0" />
                 <h3 className="text-lg font-semibold text-gray-800">{item.title}</h3>
               </div>
-              <Badge variant="outline" className="border-orange-200 text-orange-700 mt-1 md:mt-0 w-fit">
+              <Badge variant="outline" className="border-teal-200 text-[#1a7a7a] mt-1 md:mt-0 w-fit">
                 {item.type}
               </Badge>
             </div>

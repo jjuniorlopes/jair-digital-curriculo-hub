@@ -1,42 +1,44 @@
 
 import React from "react";
 import { Cloud, Database, BrainCircuit, Droplets, CheckCircle2, HeartHandshake } from "lucide-react";
+
+const tealIcon = "text-[#1a7a7a]";
 import { Card, CardContent } from "@/components/ui/card";
 
 const areas = [
   {
     title: "Internet das Coisas (IoT)",
-    icon: <Cloud className="text-indigo-600" size={28} />,
+    icon: <Cloud className={tealIcon} size={28} />,
     desc: "Projetos de sensoriamento inteligente, automação e IoT conectando dispositivos ao mundo digital.",
     color: "border-indigo-200 hover:border-indigo-400"
   },
   {
     title: "Engenharia de Dados",
-    icon: <Database className="text-blue-700" size={28} />,
+    icon: <Database className={tealIcon} size={28} />,
     desc: "Tratamento, integração e análise de dados utilizando bancos Oracle, MySQL, PostgreSQL e DB2.",
     color: "border-blue-200 hover:border-blue-400"
   },
   {
     title: "Inteligência Artificial",
-    icon: <BrainCircuit className="text-purple-700" size={28} />,
+    icon: <BrainCircuit className={tealIcon} size={28} />,
     desc: "Aplicação de IA para inovação, automação e insights valiosos em projetos digitais.",
     color: "border-purple-200 hover:border-purple-400"
   },
   {
     title: "Saneamento Básico & Ambiental",
-    icon: <Droplets className="text-teal-700" size={28} />,
+    icon: <Droplets className={tealIcon} size={28} />,
     desc: "Projetos inovadores para sustentabilidade em saneamento e meio ambiente.",
     color: "border-teal-200 hover:border-teal-400"
   },
   {
     title: "Governança de Dados",
-    icon: <CheckCircle2 className="text-green-700" size={28} />,
+    icon: <CheckCircle2 className={tealIcon} size={28} />,
     desc: "Implantação de processos de governança e proteção de dados em gestão pública e privada.",
     color: "border-green-200 hover:border-green-400"
   },
   {
     title: "Acessibilidade",
-    icon: <HeartHandshake className="text-cyan-700" size={28} />,
+    icon: <HeartHandshake className={tealIcon} size={28} />,
     desc: "Projetos inovadores para promover inclusão digital e autonomia em ambientes urbanos e institucionais.",
     color: "border-cyan-200 hover:border-cyan-400"
   }
@@ -44,7 +46,7 @@ const areas = [
 
 const AreaCardsSection = () => (
   <Card className="mb-8 shadow-lg border-0 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-    <div className="bg-gradient-to-r from-teal-600 to-teal-700 text-white rounded-t-lg p-4">
+    <div className="bg-[#1a7a7a] text-white rounded-t-lg p-4">
       <h2 className="text-xl font-bold">Áreas de Atuação</h2>
     </div>
     <CardContent className="p-6">
@@ -57,7 +59,7 @@ const AreaCardsSection = () => (
             <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-3 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
               {area.icon}
             </div>
-            <h4 className="font-bold text-gray-800 mb-1 transition-colors duration-300 group-hover:text-teal-700">{area.title}</h4>
+            <h4 className="font-bold text-gray-800 mb-1 transition-colors duration-300 group-hover:text-[#1a7a7a]">{area.title}</h4>
             <p className="text-gray-600 text-sm leading-relaxed">{area.desc}</p>
           </div>
         ))}

@@ -13,22 +13,22 @@ type Skill = {
 };
 
 const hardSkills: Skill[] = [
-  { name: "Engenharia de Dados", icon: <Database className="text-green-600" size={24} />, description: "Domínio em Oracle, MySQL, PostgreSQL e DB2", technologies: ["Oracle", "MySQL", "PostgreSQL", "DB2", "ETL"] },
-  { name: "Internet das Coisas (IoT)", icon: <Cloud className="text-green-600" size={24} />, description: "Sensoriamento inteligente e LPWAN", technologies: ["LoRaWAN", "MQTT", "Sensores", "Arduino", "Raspberry Pi"] },
-  { name: "Inteligência Artificial", icon: <BrainCircuit className="text-green-600" size={24} />, description: "IA para análise e inovação de dados", technologies: ["Machine Learning", "Python", "TensorFlow", "NLP"] },
-  { name: "Projetos Inovadores", icon: <Award className="text-green-600" size={24} />, description: "Experiência premiada em projetos", technologies: ["Smart Water", "AguaGuard", "IoT LPWAN"] },
-  { name: "ERP/BI", icon: <TrendingUp className="text-green-600" size={24} />, description: "Integração e gestão de dados corporativos", technologies: ["Power BI", "Tableau", "Grafana", "SQL"] },
-  { name: "Modelagem BPM", icon: <Layers3 className="text-green-600" size={24} />, description: "Noções de modelagem de processos", technologies: ["BPM", "BPMN", "Processos"] }
+  { name: "Engenharia de Dados", icon: <Database className="text-[#1a7a7a]" size={24} />, description: "Domínio em Oracle, MySQL, PostgreSQL e DB2", technologies: ["Oracle", "MySQL", "PostgreSQL", "DB2", "ETL"] },
+  { name: "Internet das Coisas (IoT)", icon: <Cloud className="text-[#1a7a7a]" size={24} />, description: "Sensoriamento inteligente e LPWAN", technologies: ["LoRaWAN", "MQTT", "Sensores", "Arduino", "Raspberry Pi"] },
+  { name: "Inteligência Artificial", icon: <BrainCircuit className="text-[#1a7a7a]" size={24} />, description: "IA para análise e inovação de dados", technologies: ["Machine Learning", "Python", "TensorFlow", "NLP"] },
+  { name: "Projetos Inovadores", icon: <Award className="text-[#1a7a7a]" size={24} />, description: "Experiência premiada em projetos", technologies: ["Smart Water", "AguaGuard", "IoT LPWAN"] },
+  { name: "ERP/BI", icon: <TrendingUp className="text-[#1a7a7a]" size={24} />, description: "Integração e gestão de dados corporativos", technologies: ["Power BI", "Tableau", "Grafana", "SQL"] },
+  { name: "Modelagem BPM", icon: <Layers3 className="text-[#1a7a7a]" size={24} />, description: "Noções de modelagem de processos", technologies: ["BPM", "BPMN", "Processos"] }
 ];
 
 const softSkills: Skill[] = [
-  { name: "Comunicação", icon: <Lightbulb className="text-purple-600" size={24} />, description: "Habilidade de transmitir ideias com clareza para diferentes audiências." },
-  { name: "Liderança", icon: <Users className="text-purple-600" size={24} />, description: "Gestão e motivação de equipes multidisciplinares." },
-  { name: "Autoconhecimento", icon: <BarChart4 className="text-purple-600" size={24} />, description: "Capacidade de autoavaliação e desenvolvimento pessoal." },
-  { name: "Gestão de Projetos", icon: <Workflow className="text-purple-600" size={24} />, description: "Planejamento, execução e liderança de projetos tecnológicos." },
-  { name: "Mentalidade de Equipe", icon: <Users className="text-purple-600" size={24} />, description: "Trabalho colaborativo e harmonia em grupo." },
-  { name: "Vontade de Aprender", icon: <BookOpen className="text-purple-600" size={24} />, description: "Busca constante de atualização e novas tecnologias." },
-  { name: "Gestão do Tempo", icon: <Clock4 className="text-purple-600" size={24} />, description: "Organização e disciplina no cumprimento de tarefas." }
+  { name: "Comunicação", icon: <Lightbulb className="text-[#1a7a7a]" size={24} />, description: "Habilidade de transmitir ideias com clareza para diferentes audiências." },
+  { name: "Liderança", icon: <Users className="text-[#1a7a7a]" size={24} />, description: "Gestão e motivação de equipes multidisciplinares." },
+  { name: "Autoconhecimento", icon: <BarChart4 className="text-[#1a7a7a]" size={24} />, description: "Capacidade de autoavaliação e desenvolvimento pessoal." },
+  { name: "Gestão de Projetos", icon: <Workflow className="text-[#1a7a7a]" size={24} />, description: "Planejamento, execução e liderança de projetos tecnológicos." },
+  { name: "Mentalidade de Equipe", icon: <Users className="text-[#1a7a7a]" size={24} />, description: "Trabalho colaborativo e harmonia em grupo." },
+  { name: "Vontade de Aprender", icon: <BookOpen className="text-[#1a7a7a]" size={24} />, description: "Busca constante de atualização e novas tecnologias." },
+  { name: "Gestão do Tempo", icon: <Clock4 className="text-[#1a7a7a]" size={24} />, description: "Organização e disciplina no cumprimento de tarefas." }
 ];
 
 const SkillsSection = () => {
@@ -42,13 +42,13 @@ const SkillsSection = () => {
     <div className="grid md:grid-cols-2 gap-8 mb-8">
       {/* Hard Skills */}
       <Card className="shadow-lg border-0 animate-fade-in" style={{ animationDelay: '0.25s' }}>
-        <div className="bg-gradient-to-r from-green-600 to-green-700 text-white rounded-t-lg p-4">
+        <div className="bg-[#1a7a7a] text-white rounded-t-lg p-4">
           <h2 className="text-xl font-bold">Hard Skills</h2>
         </div>
         <CardContent className="p-6">
           <div className="space-y-4">
             {hardSkills.map((skill) => (
-              <div key={skill.name} className="border rounded-lg p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 hover:border-green-200">
+              <div key={skill.name} className="border rounded-lg p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 hover:border-teal-200">
                 <Button variant="ghost" className="w-full justify-between p-0 h-auto" onClick={() => toggleSkill(skill.name)}>
                   <div className="flex items-center gap-3">
                     <span className={`transition-transform duration-300 ${expandedSkill === skill.name ? 'scale-110' : ''}`}>{skill.icon}</span>
@@ -64,7 +64,7 @@ const SkillsSection = () => {
                     {skill.technologies && (
                       <div className="flex flex-wrap gap-2">
                         {skill.technologies.map((tech) => (
-                          <Badge key={tech} variant="outline" className="border-green-200 text-green-700 transition-all duration-200 hover:bg-green-50 hover:scale-105">
+                          <Badge key={tech} variant="outline" className="border-teal-200 text-[#1a7a7a] transition-all duration-200 hover:bg-teal-50 hover:scale-105">
                             {tech}
                           </Badge>
                         ))}
@@ -80,13 +80,13 @@ const SkillsSection = () => {
 
       {/* Soft Skills */}
       <Card className="shadow-lg border-0 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-        <div className="bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-t-lg p-4">
+        <div className="bg-[#1a7a7a] text-white rounded-t-lg p-4">
           <h2 className="text-xl font-bold">Soft Skills</h2>
         </div>
         <CardContent className="p-6">
           <div className="space-y-4">
             {softSkills.map((skill) => (
-              <div key={skill.name} className="border rounded-lg p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 hover:border-purple-200">
+              <div key={skill.name} className="border rounded-lg p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 hover:border-teal-200">
                 <Button variant="ghost" className="w-full justify-between p-0 h-auto" onClick={() => toggleSkill(skill.name)}>
                   <div className="flex items-center gap-3">
                     <span className={`transition-transform duration-300 ${expandedSkill === skill.name ? 'scale-110' : ''}`}>{skill.icon}</span>
