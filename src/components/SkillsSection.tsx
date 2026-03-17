@@ -16,7 +16,7 @@ const hardSkills: Skill[] = [
   { name: "Engenharia de Dados", icon: <Database className="text-[#1a7a7a]" size={24} />, description: "Domínio em Oracle, MySQL, PostgreSQL e DB2", technologies: ["Oracle", "MySQL", "PostgreSQL", "DB2", "ETL"] },
   { name: "Internet das Coisas (IoT)", icon: <Cloud className="text-[#1a7a7a]" size={24} />, description: "Sensoriamento inteligente e LPWAN", technologies: ["LoRaWAN", "MQTT", "Sensores", "Arduino", "Raspberry Pi"] },
   { name: "Inteligência Artificial", icon: <BrainCircuit className="text-[#1a7a7a]" size={24} />, description: "IA para análise e inovação de dados", technologies: ["IA Generativa", "IA Preventiva", "Engenharia de Prompt", "Python", "NLP"] },
-  { name: "Projetos Inovadores", icon: <Award className="text-[#1a7a7a]" size={24} />, description: "Experiência premiada em projetos", technologies: ["Smart Water", "AguaGuard", "IoT LPWAN"] },
+  { name: "Projetos Inovadores", icon: <Award className="text-[#1a7a7a]" size={24} />, description: "Experiência premiada em projetos", technologies: ["Smart Water", "EcoGás", "Acessibilidade Conectada", "IoT LPWAN"] },
   { name: "ERP/BI", icon: <TrendingUp className="text-[#1a7a7a]" size={24} />, description: "Integração e gestão de dados corporativos", technologies: ["Power BI", "Tableau", "Grafana", "SQL"] },
   { name: "Modelagem BPM", icon: <Layers3 className="text-[#1a7a7a]" size={24} />, description: "Noções de modelagem de processos", technologies: ["BPM", "BPMN", "Processos"] }
 ];
