@@ -11,48 +11,49 @@ const resumo = `Profissional sênior com mais de 30 anos de experiência em Tecn
 
 const ProfileHeader = () => (
   <div className="animate-fade-in">
-    {/* Banner with profile photo overlay */}
-    <Card className="mb-8 shadow-lg border-0 overflow-hidden relative">
-      <div className="w-full overflow-hidden">
-        <img
-          src={bannerUrl}
-          alt="Banner Inovação, Transformação Digital e Ambiental"
-          className="w-full h-auto object-cover"
-        />
-      </div>
-      {/* Profile photo overlapping banner */}
-      <div className="absolute bottom-0 left-6 md:left-10 translate-y-1/2 z-10">
-        <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden shadow-xl border-4 border-white transition-transform duration-500 hover:scale-110">
-          <img
-            src={photoUrl}
-            alt="Foto de Jair Costa Lopes Junior"
-            className="w-full h-full object-cover"
-            style={{ backgroundColor: '#e2e8f0' }}
-          />
-        </div>
-      </div>
-    </Card>
+    {/* Banner as background with profile info overlay */}
+    <Card className="mb-8 shadow-lg border-0 overflow-hidden">
+      <div
+        className="relative w-full bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${bannerUrl})`,
+          minHeight: '280px',
+        }}
+      >
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/40" />
 
-    {/* Profile Info Card */}
-    <Card className="mb-8 shadow-lg border-0 overflow-hidden animate-fade-in" style={{ animationDelay: '0.1s' }}>
-      <div className="bg-gradient-to-r from-teal-700 via-teal-800 to-blue-900 p-8 pt-12 md:pt-8 text-white">
-        <div className="flex flex-col md:flex-row items-center gap-6 md:pl-40">
-          <div className="text-center md:text-left flex-1">
-            <h1 className="text-3xl md:text-4xl font-bold mb-2">Jair Costa Lopes Junior</h1>
-            <p className="text-xl text-teal-100 mb-4">
+        {/* Content over banner */}
+        <div className="relative z-10 flex flex-col md:flex-row items-center gap-6 p-8 md:p-10">
+          {/* Profile photo */}
+          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden shadow-xl border-4 border-white/80 transition-transform duration-500 hover:scale-110 flex-shrink-0">
+            <img
+              src={photoUrl}
+              alt="Foto de Jair Costa Lopes Junior"
+              className="w-full h-full object-cover"
+              style={{ backgroundColor: '#e2e8f0' }}
+            />
+          </div>
+
+          {/* Info */}
+          <div className="text-center md:text-left flex-1 text-white">
+            <h1 className="text-3xl md:text-4xl font-bold mb-2 drop-shadow-lg">Jair Costa Lopes Junior</h1>
+            <p className="text-lg md:text-xl text-white/90 mb-4 drop-shadow">
               Consultor em Tecnologias Emergentes | IoT | Data Engineering | AI
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-              <div className="flex items-center gap-2 transition-colors duration-300 hover:text-teal-200">
+              <div className="flex items-center gap-2 drop-shadow">
                 <MapPin size={16} />
                 <span>Salvador - BA, Brasil</span>
               </div>
-              <div className="flex items-center gap-2 transition-colors duration-300 hover:text-teal-200">
+              <div className="flex items-center gap-2 drop-shadow">
                 <Mail size={16} />
                 <span>jjuniorlopes@gmail.com</span>
               </div>
             </div>
           </div>
+
+          {/* Buttons */}
           <div className="flex flex-col gap-3">
             <Button
               className="bg-white text-teal-700 hover:bg-teal-50 transition-all duration-300 hover:scale-105 hover:shadow-lg"
