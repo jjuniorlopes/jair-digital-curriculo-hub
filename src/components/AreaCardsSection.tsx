@@ -44,7 +44,7 @@ const areas = [
 
 const AreaCardsSection = () => (
   <Card className="mb-8 shadow-lg border-0 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-    <div className="bg-gradient-to-r from-teal-600 to-teal-700 text-white rounded-t-lg p-4">
+    <div className="bg-[#1a7a7a] text-white rounded-t-lg p-4">
       <h2 className="text-xl font-bold">Áreas de Atuação</h2>
     </div>
     <CardContent className="p-6">
