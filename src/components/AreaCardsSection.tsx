@@ -1,6 +1,8 @@
 
 import React from "react";
 import { Cloud, Database, BrainCircuit, Droplets, CheckCircle2, HeartHandshake } from "lucide-react";
+
+const tealIcon = "text-[#1a7a7a]";
 import { Card, CardContent } from "@/components/ui/card";
 
 const areas = [
