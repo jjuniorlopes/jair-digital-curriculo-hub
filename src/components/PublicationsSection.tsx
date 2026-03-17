@@ -21,9 +21,9 @@ const PublicationsSection = () => (
     <CardContent className="p-6">
       <div className="space-y-6">
         {publications.map((pub, idx) => (
-          <div key={idx} className="group border rounded-lg p-5 bg-gradient-to-br from-white to-gray-50 transition-all duration-400 hover:shadow-xl hover:-translate-y-1 hover:border-indigo-200">
+          <div key={idx} className="group border rounded-lg p-5 bg-gradient-to-br from-white to-gray-50 transition-all duration-400 hover:shadow-xl hover:-translate-y-1 hover:border-teal-200">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:bg-indigo-200 group-hover:scale-110 flex-shrink-0">
+              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:bg-teal-200 group-hover:scale-110 flex-shrink-0">
                 {pub.icon}
               </div>
               <div className="flex-1">
