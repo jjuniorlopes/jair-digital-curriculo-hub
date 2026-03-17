@@ -17,7 +17,7 @@ const hardSkills: Skill[] = [
   { name: "Internet das Coisas (IoT)", icon: <Cloud className="text-[#1a7a7a]" size={24} />, description: "Sensoriamento inteligente e LPWAN", technologies: ["LoRaWAN", "MQTT", "Sensores", "Arduino", "Raspberry Pi"] },
   { name: "Inteligência Artificial", icon: <BrainCircuit className="text-[#1a7a7a]" size={24} />, description: "IA para análise e inovação de dados", technologies: ["IA Generativa", "IA Preventiva", "Engenharia de Prompt", "Python", "NLP"] },
   { name: "Projetos Inovadores", icon: <Award className="text-[#1a7a7a]" size={24} />, description: "Experiência premiada em projetos", technologies: ["Smart Water", "EcoGás", "Acessibilidade Conectada", "IoT LPWAN"] },
-  { name: "ERP/BI", icon: <TrendingUp className="text-[#1a7a7a]" size={24} />, description: "Integração e gestão de dados corporativos", technologies: ["Power BI", "Tableau", "Grafana", "SQL"] },
+  { name: "ERP/BI", icon: <TrendingUp className="text-[#1a7a7a]" size={24} />, description: "Integração e gestão de dados corporativos", technologies: ["Power BI", "Qlik Sense", "Grafana", "SQL", "ETL"] },
   { name: "Modelagem BPM", icon: <Layers3 className="text-[#1a7a7a]" size={24} />, description: "Noções de modelagem de processos", technologies: ["BPM", "BPMN", "Processos"] }
 ];
 
