@@ -26,7 +26,7 @@ const areas = [
   },
   {
     title: "Saneamento Básico & Ambiental",
-    icon: <Droplets className="text-teal-700" size={28} />,
+    icon: <Droplets className={tealIcon} size={28} />,
     desc: "Projetos inovadores para sustentabilidade em saneamento e meio ambiente.",
     color: "border-teal-200 hover:border-teal-400"
   },
