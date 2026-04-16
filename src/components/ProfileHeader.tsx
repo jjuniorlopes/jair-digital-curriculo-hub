@@ -1,13 +1,29 @@
 
 import React from "react";
-import { Mail, Linkedin, Instagram, MessageCircle, MapPin } from "lucide-react";
+import { Mail, Linkedin, Instagram, MessageCircle, MapPin, Cloud, Database, BrainCircuit, Droplets, HeartHandshake, Lightbulb } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 const bannerUrl = "/lovable-uploads/Banner_jair_limpo.png";
 const photoUrl = "/lovable-uploads/profile-photo.png";
 
-const resumo = `Profissional sênior com mais de 30 anos de experiência em Tecnologia da Informação, com atuação destacada em Engenharia de Dados e Internet das Coisas (IoT). Graduado em Processamento de Dados, possui especializações em Engenharia de IoT, Ciência de Dados (Big Data e Analytics), Banco de Dados, Análise de Sistemas e MBA em Gestão Empresarial. Tem curso internacional em Inteligência Artificial Aplicada aos Desafios Socioambientais da Amazônia se destacando entre os 7 melhores trabalhos do curso e em Agentes Inteligentes com IA Generativas, ambos pelo Instituto de Inteligência Artificial Aplicada (I2A2). Atua no desenvolvimento de soluções em IA aplicada aos negócios e em arquiteturas IoT LPWAN voltadas a Cidades Inteligentes, Acessibilidade e Saneamento/Meio Ambiente. Premiado por inovação e autor de artigos técnicos nas áreas de saneamento e tecnologia.`;
+const resumoParagrafos = [
+  "Profissional com mais de 30 anos de experiência em Tecnologia da Informação, atuando de forma estratégica na interseção entre Engenharia de Dados, Inteligência Artificial Generativa, Internet das Coisas (IoT) e Transformação Digital.",
+  "Ao longo da minha trajetória, liderei e participei de projetos de alto impacto voltados à inovação e eficiência operacional, com foco na aplicação de dados e tecnologias emergentes para resolver problemas reais de negócio — especialmente em iniciativas relacionadas a Smart Cities, acessibilidade, saneamento, sustentabilidade e gestão pública.",
+  "Possuo sólida experiência na construção de arquiteturas de dados, integração de sistemas e desenvolvimento de soluções analíticas utilizando bancos de dados como Oracle, PostgreSQL, MySQL e DB2, além da aplicação de IA Generativa para geração de insights, automação e apoio à tomada de decisão.",
+  "Minha atuação inclui projetos de Indústria 4.0, soluções ergonômicas assertivas, governança de dados, gestão de ativos e redução de perdas, contribuindo diretamente para melhoria de eficiência operacional e inovação organizacional.",
+  "Sou reconhecido pela capacidade de conectar tecnologia à estratégia de negócios, transformando dados em valor e soluções digitais em resultados concretos.",
+  "📩 Aberto a conexões e oportunidades para projetos estratégicos, inovação e transformação digital."
+];
+
+const perfilCards = [
+  { label: "Especialista em IoT", icon: <Cloud size={18} className="text-[#1a7a7a]" /> },
+  { label: "Engenharia de Dados", icon: <Database size={18} className="text-[#1a7a7a]" /> },
+  { label: "Consultor de IA", icon: <BrainCircuit size={18} className="text-[#1a7a7a]" /> },
+  { label: "Tecnologia Ambiental", icon: <Droplets size={18} className="text-[#1a7a7a]" /> },
+  { label: "Acessibilidade", icon: <HeartHandshake size={18} className="text-[#1a7a7a]" /> },
+  { label: "Inovação", icon: <Lightbulb size={18} className="text-[#1a7a7a]" /> },
+];
 
 const ProfileHeader = () => (
   <div className="animate-fade-in">
