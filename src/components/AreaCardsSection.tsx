@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Cloud, Database, BrainCircuit, Droplets, CheckCircle2, HeartHandshake } from "lucide-react";
+import { Cloud, Database, BrainCircuit, Droplets, CheckCircle2, HeartHandshake, Lightbulb, Workflow } from "lucide-react";
 
 const tealIcon = "text-[#1a7a7a]";
 import { Card, CardContent } from "@/components/ui/card";
@@ -41,6 +41,18 @@ const areas = [
     icon: <HeartHandshake className={tealIcon} size={28} />,
     desc: "Projetos inovadores para promover inclusão digital e autonomia em ambientes urbanos e institucionais.",
     color: "border-cyan-200 hover:border-cyan-400"
+  },
+  {
+    title: "Gestão da Inovação (Design Thinking)",
+    icon: <Lightbulb className={tealIcon} size={28} />,
+    desc: "Projetos inovadores com uma abordagem centrada no ser humano para resolver problemas complexos e fomentar a inovação, focando nas necessidades reais dos usuários antes de propor soluções, com base na metodologia Design Thinking.",
+    color: "border-amber-200 hover:border-amber-400"
+  },
+  {
+    title: "Gestão Ágil",
+    icon: <Workflow className={tealIcon} size={28} />,
+    desc: "Projetos focados em metodologias ágeis com eficiência e entrega contínua, com o Scrum estruturado em ciclos fixos (Sprints) e papéis definidos, e o Kanban como método visual e flexível para gerenciar o fluxo contínuo de trabalho.",
+    color: "border-rose-200 hover:border-rose-400"
   }
 ];
 
