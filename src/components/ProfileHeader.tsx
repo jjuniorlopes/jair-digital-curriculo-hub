@@ -103,22 +103,21 @@ const ProfileHeader = () => (
         <h2 className="text-2xl font-bold">Resumo Profissional</h2>
       </div>
       <div className="p-6">
-        <p className="text-gray-700 leading-relaxed text-lg text-justify">{resumo}</p>
-        <div className="mt-4 flex flex-wrap gap-2">
-          {["IoT Specialist", "Data Engineering", "AI Consultant", "Environmental Tech", "Acessibilidade"].map((tag, i) => {
-            const colors = [
-              "bg-blue-100 text-blue-800",
-              "bg-green-100 text-green-800",
-              "bg-purple-100 text-purple-800",
-              "bg-orange-100 text-orange-800",
-              "bg-cyan-100 text-cyan-800",
-            ];
-            return (
-              <span key={tag} className={`px-3 py-1 rounded-full text-sm font-medium ${colors[i]} transition-all duration-200 hover:scale-110 hover:shadow-md cursor-default`}>
-                {tag}
-              </span>
-            );
-          })}
+        <div className="space-y-3">
+          {resumoParagrafos.map((p, i) => (
+            <p key={i} className="text-gray-700 leading-relaxed text-base md:text-lg text-justify">{p}</p>
+          ))}
+        </div>
+        <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {perfilCards.map((card) => (
+            <div
+              key={card.label}
+              className="flex items-center gap-2 px-3 py-2 rounded-lg border border-teal-200 bg-teal-50/50 hover:bg-teal-50 hover:border-[#1a7a7a] hover:shadow-md transition-all duration-300 hover:-translate-y-0.5"
+            >
+              <span className="flex-shrink-0">{card.icon}</span>
+              <span className="text-sm font-medium text-gray-700">{card.label}</span>
+            </div>
+          ))}
         </div>
       </div>
     </Card>
