@@ -1,13 +1,29 @@
 
 import React from "react";
-import { Mail, Linkedin, Instagram, MessageCircle, MapPin } from "lucide-react";
+import { Mail, Linkedin, Instagram, MessageCircle, MapPin, Cloud, Database, BrainCircuit, Droplets, HeartHandshake, Lightbulb } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 const bannerUrl = "/lovable-uploads/Banner_jair_limpo.png";
 const photoUrl = "/lovable-uploads/profile-photo.png";
 
-const resumo = `Profissional sênior com mais de 30 anos de experiência em Tecnologia da Informação, com atuação destacada em Engenharia de Dados e Internet das Coisas (IoT). Graduado em Processamento de Dados, possui especializações em Engenharia de IoT, Ciência de Dados (Big Data e Analytics), Banco de Dados, Análise de Sistemas e MBA em Gestão Empresarial. Tem curso internacional em Inteligência Artificial Aplicada aos Desafios Socioambientais da Amazônia se destacando entre os 7 melhores trabalhos do curso e em Agentes Inteligentes com IA Generativas, ambos pelo Instituto de Inteligência Artificial Aplicada (I2A2). Atua no desenvolvimento de soluções em IA aplicada aos negócios e em arquiteturas IoT LPWAN voltadas a Cidades Inteligentes, Acessibilidade e Saneamento/Meio Ambiente. Premiado por inovação e autor de artigos técnicos nas áreas de saneamento e tecnologia.`;
+const resumoParagrafos = [
+  "Profissional com mais de 30 anos de experiência em Tecnologia da Informação, atuando de forma estratégica na interseção entre Engenharia de Dados, Inteligência Artificial Generativa, Internet das Coisas (IoT) e Transformação Digital.",
+  "Ao longo da minha trajetória, liderei e participei de projetos de alto impacto voltados à inovação e eficiência operacional, com foco na aplicação de dados e tecnologias emergentes para resolver problemas reais de negócio — especialmente em iniciativas relacionadas a Smart Cities, acessibilidade, saneamento, sustentabilidade e gestão pública.",
+  "Possuo sólida experiência na construção de arquiteturas de dados, integração de sistemas e desenvolvimento de soluções analíticas utilizando bancos de dados como Oracle, PostgreSQL, MySQL e DB2, além da aplicação de IA Generativa para geração de insights, automação e apoio à tomada de decisão.",
+  "Minha atuação inclui projetos de Indústria 4.0, soluções ergonômicas assertivas, governança de dados, gestão de ativos e redução de perdas, contribuindo diretamente para melhoria de eficiência operacional e inovação organizacional.",
+  "Sou reconhecido pela capacidade de conectar tecnologia à estratégia de negócios, transformando dados em valor e soluções digitais em resultados concretos.",
+  "📩 Aberto a conexões e oportunidades para projetos estratégicos, inovação e transformação digital."
+];
+
+const perfilCards = [
+  { label: "Especialista em IoT", icon: <Cloud size={18} className="text-[#1a7a7a]" /> },
+  { label: "Engenharia de Dados", icon: <Database size={18} className="text-[#1a7a7a]" /> },
+  { label: "Consultor de IA", icon: <BrainCircuit size={18} className="text-[#1a7a7a]" /> },
+  { label: "Tecnologia Ambiental", icon: <Droplets size={18} className="text-[#1a7a7a]" /> },
+  { label: "Acessibilidade", icon: <HeartHandshake size={18} className="text-[#1a7a7a]" /> },
+  { label: "Inovação", icon: <Lightbulb size={18} className="text-[#1a7a7a]" /> },
+];
 
 const ProfileHeader = () => (
   <div className="animate-fade-in">
@@ -38,8 +54,8 @@ const ProfileHeader = () => (
           {/* Info */}
           <div className="text-center md:text-left flex-1 text-white">
             <h1 className="text-3xl md:text-4xl font-bold mb-2 drop-shadow-lg">Jair Costa Lopes Junior</h1>
-            <p className="text-lg md:text-xl text-white/90 mb-4 drop-shadow">
-              Consultor em Tecnologias Emergentes | IoT | Data Engineering | AI
+            <p className="text-base md:text-lg text-white/90 mb-4 drop-shadow leading-snug">
+              Head de Dados & Inovação | Engenheiro de Dados Sênior | Especialista em IA Generativa, IoT e Transformação Digital | Smart Cities & Sustentabilidade | +30 anos gerando inovação e eficiência com dados
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
               <div className="flex items-center gap-2 drop-shadow">
@@ -87,22 +103,21 @@ const ProfileHeader = () => (
         <h2 className="text-2xl font-bold">Resumo Profissional</h2>
       </div>
       <div className="p-6">
-        <p className="text-gray-700 leading-relaxed text-lg text-justify">{resumo}</p>
-        <div className="mt-4 flex flex-wrap gap-2">
-          {["IoT Specialist", "Data Engineering", "AI Consultant", "Environmental Tech", "Acessibilidade"].map((tag, i) => {
-            const colors = [
-              "bg-blue-100 text-blue-800",
-              "bg-green-100 text-green-800",
-              "bg-purple-100 text-purple-800",
-              "bg-orange-100 text-orange-800",
-              "bg-cyan-100 text-cyan-800",
-            ];
-            return (
-              <span key={tag} className={`px-3 py-1 rounded-full text-sm font-medium ${colors[i]} transition-all duration-200 hover:scale-110 hover:shadow-md cursor-default`}>
-                {tag}
-              </span>
-            );
-          })}
+        <div className="space-y-3">
+          {resumoParagrafos.map((p, i) => (
+            <p key={i} className="text-gray-700 leading-relaxed text-base md:text-lg text-justify">{p}</p>
+          ))}
+        </div>
+        <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {perfilCards.map((card) => (
+            <div
+              key={card.label}
+              className="flex items-center gap-2 px-3 py-2 rounded-lg border border-teal-200 bg-teal-50/50 hover:bg-teal-50 hover:border-[#1a7a7a] hover:shadow-md transition-all duration-300 hover:-translate-y-0.5"
+            >
+              <span className="flex-shrink-0">{card.icon}</span>
+              <span className="text-sm font-medium text-gray-700">{card.label}</span>
+            </div>
+          ))}
         </div>
       </div>
     </Card>
