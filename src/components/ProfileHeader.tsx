@@ -54,8 +54,8 @@ const ProfileHeader = () => (
           {/* Info */}
           <div className="text-center md:text-left flex-1 text-white">
             <h1 className="text-3xl md:text-4xl font-bold mb-2 drop-shadow-lg">Jair Costa Lopes Junior</h1>
-            <p className="text-lg md:text-xl text-white/90 mb-4 drop-shadow">
-              Consultor em Tecnologias Emergentes | IoT | Data Engineering | AI
+            <p className="text-base md:text-lg text-white/90 mb-4 drop-shadow leading-snug">
+              Head de Dados & Inovação | Engenheiro de Dados Sênior | Especialista em IA Generativa, IoT e Transformação Digital | Smart Cities & Sustentabilidade | +30 anos gerando inovação e eficiência com dados
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
               <div className="flex items-center gap-2 drop-shadow">
