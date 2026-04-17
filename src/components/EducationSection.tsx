@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const educationItems = [
-  { title: "IA Aplicada aos Desafios Socioambientais da Amazônia", institution: "I2A2 - Institut d'Intelligence Artificielle Appliquée", type: "Especialização" },
+  { title: "IA Aplicada aos Desafios Socioambientais da Amazônia", institution: "I2A2 - Institut d'Intelligence Artificielle Appliquée", type: "Curso Internacional" },
   { title: "Agentes Inteligentes com IA Generativas", institution: "I2A2 - Institut d'Intelligence Artificielle Appliquée", type: "Curso Internacional" },
   { title: "Ciência de Dados: Big Data e Analytics", institution: "", type: "Especialização" },
   { title: "Engenharia de Internet das Coisas (IoT)", institution: "", type: "Especialização" },
