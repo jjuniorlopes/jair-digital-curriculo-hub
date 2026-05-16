@@ -72,7 +72,7 @@ const ProfileHeader = () => (
           <div className="flex flex-col gap-3">
             <Button
               className="bg-[#0A66C2] hover:bg-[#004182] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-              onClick={() => window.open('https://www.linkedin.com/in/jair-costa-lopes-junior-ab6109199/', '_blank')}
+              onClick={() => window.open('https://www.linkedin.com/in/jjuniorlopes/', '_blank')}
             >
               <Linkedin size={20} className="mr-2" />
               LinkedIn
