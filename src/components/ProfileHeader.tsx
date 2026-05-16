@@ -42,12 +42,11 @@ const ProfileHeader = () => (
         {/* Content over banner */}
         <div className="relative z-10 flex flex-col md:flex-row items-center gap-6 p-8 md:p-10">
           {/* Profile photo */}
-          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden shadow-xl border-4 border-white/80 transition-transform duration-500 hover:scale-110 flex-shrink-0">
+          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden shadow-xl border-4 border-white/80 bg-white transition-transform duration-500 hover:scale-110 flex-shrink-0">
             <img
               src={photoUrl}
               alt="Foto de Jair Costa Lopes Junior"
-              className="w-full h-full object-cover"
-              style={{ backgroundColor: '#e2e8f0' }}
+              className="w-full h-full object-cover bg-white"
             />
           </div>
 
