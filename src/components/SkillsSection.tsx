@@ -18,7 +18,9 @@ const hardSkills: Skill[] = [
   { name: "Inteligência Artificial", icon: <BrainCircuit className="text-[#1a7a7a]" size={24} />, description: "IA para análise e inovação de dados", technologies: ["IA Generativa", "IA Preventiva", "Engenharia de Prompt", "Python", "NLP"] },
   { name: "Projetos Inovadores", icon: <Award className="text-[#1a7a7a]" size={24} />, description: "Experiência premiada em projetos", technologies: ["Smart Water", "EcoGás", "Acessibilidade Conectada", "IoT LPWAN"] },
   { name: "ERP/BI", icon: <TrendingUp className="text-[#1a7a7a]" size={24} />, description: "Integração e gestão de dados corporativos", technologies: ["Power BI", "Qlik Sense", "Grafana", "SQL", "ETL"] },
-  { name: "Modelagem BPM", icon: <Layers3 className="text-[#1a7a7a]" size={24} />, description: "Noções de modelagem de processos", technologies: ["BPM", "BPMN", "Processos"] }
+  { name: "Modelagem BPM", icon: <Layers3 className="text-[#1a7a7a]" size={24} />, description: "Noções de modelagem de processos", technologies: ["BPM", "BPMN", "Processos"] },
+  { name: "Design Thinking", icon: <Lightbulb className="text-[#1a7a7a]" size={24} />, description: "Abordagem criativa para resolução de problemas centrada no usuário", technologies: ["Empatia", "Ideação", "Prototipação", "Co-criação", "UX"] },
+  { name: "Scrum & Kanban", icon: <Workflow className="text-[#1a7a7a]" size={24} />, description: "Metodologias ágeis para gestão e entrega de projetos", technologies: ["Scrum", "Kanban", "Sprints", "Backlog", "Jira"] }
 ];
 
 const softSkills: Skill[] = [
@@ -28,7 +30,9 @@ const softSkills: Skill[] = [
   { name: "Gestão de Projetos", icon: <Workflow className="text-[#1a7a7a]" size={24} />, description: "Planejamento, execução e liderança de projetos tecnológicos." },
   { name: "Mentalidade de Equipe", icon: <Users className="text-[#1a7a7a]" size={24} />, description: "Trabalho colaborativo e harmonia em grupo." },
   { name: "Vontade de Aprender", icon: <BookOpen className="text-[#1a7a7a]" size={24} />, description: "Busca constante de atualização e novas tecnologias." },
-  { name: "Gestão do Tempo", icon: <Clock4 className="text-[#1a7a7a]" size={24} />, description: "Organização e disciplina no cumprimento de tarefas." }
+  { name: "Gestão do Tempo", icon: <Clock4 className="text-[#1a7a7a]" size={24} />, description: "Organização e disciplina no cumprimento de tarefas." },
+  { name: "Gestão Ágil", icon: <Workflow className="text-[#1a7a7a]" size={24} />, description: "Adaptação rápida a mudanças com foco em entregas de valor contínuas." },
+  { name: "Gestão da Inovação", icon: <Lightbulb className="text-[#1a7a7a]" size={24} />, description: "Promoção de uma cultura criativa para transformar ideias em soluções de impacto." }
 ];
 
 const SkillsSection = () => {
