@@ -8,10 +8,10 @@ const bannerUrl = "/lovable-uploads/Banner_jair_limpo.png";
 const photoUrl = "/lovable-uploads/profile-photo.png";
 
 const resumoParagrafos = [
-  "Profissional com mais de 30 anos de experiência em Tecnologia da Informação, atuando de forma estratégica na interseção entre Engenharia de Dados, Inteligência Artificial Generativa, Internet das Coisas (IoT) e Transformação Digital.",
-  "Ao longo da minha trajetória, liderei e participei de projetos de alto impacto voltados à inovação e eficiência operacional, com foco na aplicação de dados e tecnologias emergentes para resolver problemas reais de negócio — especialmente em iniciativas relacionadas a Smart Cities, acessibilidade, saneamento, sustentabilidade e gestão pública.",
-  "Possuo sólida experiência na construção de arquiteturas de dados, integração de sistemas e desenvolvimento de soluções analíticas utilizando bancos de dados como Oracle, PostgreSQL, MySQL e DB2, além da aplicação de IA Generativa para geração de insights, automação e apoio à tomada de decisão.",
-  "Minha atuação inclui projetos de Indústria 4.0, soluções ergonômicas assertivas, governança de dados, gestão de ativos e redução de perdas, contribuindo diretamente para melhoria de eficiência operacional e inovação organizacional.",
+  "Profissional com mais de 30 anos de experiência em Tecnologia da Informação, atuando de forma estratégica na interseção entre Engenharia de Dados, Análise de Dados, Inteligência Artificial (incluindo IA Generativa), Internet das Coisas (IoT), Gestão Ágil, Governança Digital e Transformação Digital.",
+  "Ao longo da minha trajetória, liderei e participei de projetos de alto impacto voltados à inovação e eficiência operacional, com foco na aplicação de dados e tecnologias emergentes para resolver problemas reais de negócio — especialmente em iniciativas relacionadas a Smart Cities & Sustentabilidade, Acessibilidade Digital, Saneamento Básico, Recursos Hídricos e Gestão Pública.",
+  "Possuo sólida experiência na construção de arquiteturas de dados, integração de sistemas e desenvolvimento de soluções analíticas utilizando bancos de dados relacionais e não relacionais, além da aplicação de IA Generativa para geração de insights, automação e apoio à tomada de decisão com Gestão Ágil (Scrum e Kanban) e OKRs.",
+  "Minha atuação inclui projetos de Indústria 4.0, soluções ergonômicas digitais, governança de dados, gestão de ativos e redução de perdas, contribuindo diretamente para melhoria de eficiência operacional e inovação organizacional.",
   "Sou reconhecido pela capacidade de conectar tecnologia à estratégia de negócios, transformando dados em valor e soluções digitais em resultados concretos.",
   "📩 Aberto a conexões e oportunidades para projetos estratégicos, inovação e transformação digital."
 ];
