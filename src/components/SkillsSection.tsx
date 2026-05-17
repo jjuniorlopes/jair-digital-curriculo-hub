@@ -19,7 +19,7 @@ const hardSkills: Skill[] = [
   { name: "Projetos Inovadores", icon: <Award className="text-[#1a7a7a]" size={24} />, description: "Experiência premiada em projetos", technologies: ["Smart Water", "EcoGás", "Acessibilidade Conectada", "IoT LPWAN"] },
   { name: "ERP/BI", icon: <TrendingUp className="text-[#1a7a7a]" size={24} />, description: "Integração e gestão de dados corporativos", technologies: ["Power BI", "Qlik Sense", "Grafana", "SQL", "ETL"] },
   { name: "Modelagem BPM", icon: <Layers3 className="text-[#1a7a7a]" size={24} />, description: "Noções de modelagem de processos", technologies: ["BPM", "BPMN", "Processos"] },
-  { name: "Design Thinking", icon: <Lightbulb className="text-[#1a7a7a]" size={24} />, description: "Abordagem criativa para resolução de problemas centrada no usuário", technologies: ["Empatia", "Ideação", "Prototipação", "Co-criação", "UX"] },
+  { name: "Design Thinking", icon: <Lightbulb className="text-[#1a7a7a]" size={24} />, description: "Abordagem criativa para resolução de problemas centrada no usuário", technologies: ["Empatia", "Definição", "Ideação", "Prototipação", "Teste", "UX"] },
   { name: "Scrum & Kanban", icon: <Workflow className="text-[#1a7a7a]" size={24} />, description: "Metodologias ágeis para gestão e entrega de projetos", technologies: ["Scrum", "Kanban", "Sprints", "Backlog", "Jira"] }
 ];
 
