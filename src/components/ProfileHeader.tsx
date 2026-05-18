@@ -31,9 +31,8 @@ const ProfileHeader = () => (
     <Card className="mb-8 shadow-lg border-0 overflow-hidden">
       <div className="relative w-full">
         <div
-          className="relative w-full bg-cover bg-center aspect-[1920/576]"
+          className="relative w-full bg-cover bg-center aspect-[1920/576] bg-[#1a7a7a]"
           style={{
-            backgroundImage: `url(${bannerUrl})`,
             minHeight: '260px',
           }}
         >
