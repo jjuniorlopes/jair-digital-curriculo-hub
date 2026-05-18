@@ -34,9 +34,28 @@ const ProfileHeader = () => (
           className="relative w-full bg-cover bg-center aspect-[1920/576]"
           style={{
             backgroundImage: `url(${bannerUrl})`,
-            minHeight: '220px',
+            minHeight: '260px',
           }}
-        />
+        >
+          {/* Text + tags overlay */}
+          <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12 lg:px-16 pl-32 md:pl-48">
+            <h2 className="text-white font-extrabold leading-tight drop-shadow-lg text-base sm:text-lg md:text-2xl lg:text-3xl mb-3 md:mb-5 max-w-3xl">
+              Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil
+            </h2>
+            <div className="flex flex-wrap gap-1.5 md:gap-2 max-w-3xl">
+              <span className="px-2.5 py-1 rounded-md bg-[#1d4ed8] text-white text-[10px] md:text-xs font-bold shadow">INTELIGÊNCIA ARTIFICIAL</span>
+              <span className="px-2.5 py-1 rounded-md bg-[#0f766e] text-white text-[10px] md:text-xs font-bold shadow">SCRUM</span>
+              <span className="px-2.5 py-1 rounded-md bg-[#6b21a8] text-white text-[10px] md:text-xs font-bold shadow">KANBAN</span>
+              <span className="px-2.5 py-1 rounded-md bg-[#ea580c] text-white text-[10px] md:text-xs font-bold shadow">OKR</span>
+              <span className="px-2.5 py-1 rounded-md bg-[#1d4ed8] text-white text-[10px] md:text-xs font-bold shadow">PYTHON</span>
+              <span className="px-2.5 py-1 rounded-md bg-[#0f766e] text-white text-[10px] md:text-xs font-bold shadow">SQL</span>
+              <span className="px-2.5 py-1 rounded-md bg-[#334155] text-white text-[10px] md:text-xs font-bold shadow">DESIGN THINKING</span>
+              <span className="px-2.5 py-1 rounded-md bg-[#0891b2] text-white text-[10px] md:text-xs font-bold shadow">BANCO DE DADOS</span>
+              <span className="px-2.5 py-1 rounded-md bg-[#1d4ed8] text-white text-[10px] md:text-xs font-bold shadow">INTERNET DAS COISAS</span>
+              <span className="px-2.5 py-1 rounded-md bg-[#ea580c] text-white text-[10px] md:text-xs font-bold shadow">E MUITO MAIS</span>
+            </div>
+          </div>
+        </div>
 
         {/* Profile photo - bottom left overlapping banner */}
         <div className="absolute left-4 md:left-8 -bottom-10 md:-bottom-12 z-20 w-24 h-24 md:w-36 md:h-36 rounded-full overflow-hidden shadow-xl border-4 border-white bg-white transition-transform duration-500 hover:scale-105">
