@@ -33,6 +33,7 @@ const ProfileHeader = () => (
         <div
           className="relative w-full bg-cover bg-center aspect-[1920/576] bg-[#1a7a7a]"
           style={{
+            backgroundImage: `linear-gradient(rgba(26,122,122,0.85), rgba(26,122,122,0.85)), url(${bannerUrl})`,
             minHeight: '260px',
           }}
         >
