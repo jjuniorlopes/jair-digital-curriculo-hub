@@ -17,7 +17,9 @@ const Index = () => {
         <EducationSection />
         <AwardsSection />
         <PublicationsSection />
-        <ContactSection />
+        <div id="contato">
+          <ContactSection />
+        </div>
         <footer className="text-xs text-center mt-10 mb-4 text-gray-500">
           Página gerada digitalmente para divulgação profissional de Jair Costa Lopes Junior.
         </footer>
