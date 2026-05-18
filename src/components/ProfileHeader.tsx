@@ -38,7 +38,7 @@ const ProfileHeader = () => (
           }}
         >
           {/* Text + tags overlay */}
-          <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12 lg:px-16 pl-32 md:pl-48">
+          <div className="absolute inset-0 flex flex-col justify-center pl-32 md:pl-48 pr-3 md:pr-4">
             <h2 className="text-white font-extrabold leading-tight drop-shadow-lg text-base sm:text-lg md:text-2xl lg:text-3xl mb-3 md:mb-5 max-w-3xl">
               Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil
             </h2>
