@@ -27,20 +27,19 @@ const perfilCards = [
 
 const ProfileHeader = () => (
   <div className="animate-fade-in">
-    {/* Banner as background with profile info overlay */}
+    {/* Banner with photo overlapping bottom-left and action buttons overlapping bottom-right */}
     <Card className="mb-8 shadow-lg border-0 overflow-hidden">
-      <div
-        className="relative w-full bg-cover bg-center aspect-[1920/576]"
-        style={{
-          backgroundImage: `url(${bannerUrl})`,
-          minHeight: '280px',
-        }}
-      >
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/30" />
+      <div className="relative w-full">
+        <div
+          className="relative w-full bg-cover bg-center aspect-[1920/576]"
+          style={{
+            backgroundImage: `url(${bannerUrl})`,
+            minHeight: '220px',
+          }}
+        />
 
-        {/* Profile photo - bottom left */}
-        <div className="absolute left-4 bottom-4 md:left-6 md:bottom-6 z-20 w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden shadow-xl border-4 border-white/80 bg-white transition-transform duration-500 hover:scale-110">
+        {/* Profile photo - bottom left overlapping banner */}
+        <div className="absolute left-4 md:left-8 -bottom-10 md:-bottom-12 z-20 w-24 h-24 md:w-36 md:h-36 rounded-full overflow-hidden shadow-xl border-4 border-white bg-white transition-transform duration-500 hover:scale-105">
           <img
             src={photoUrl}
             alt="Foto de Jair Costa Lopes Junior"
@@ -48,53 +47,57 @@ const ProfileHeader = () => (
           />
         </div>
 
-        {/* Content over banner */}
-        <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start gap-6 p-6 md:p-10 h-full">
-          {/* Spacer for photo on desktop */}
-          <div className="hidden md:block flex-shrink-0 w-32" />
+        {/* Action buttons - bottom right overlapping banner */}
+        <div className="absolute right-3 md:right-6 -bottom-6 md:bottom-4 z-20 flex flex-row gap-2 md:gap-3">
+          <Button
+            size="sm"
+            className="bg-[#0A66C2] hover:bg-[#004182] text-white shadow-lg transition-all duration-300 hover:scale-105"
+            onClick={() => window.open('https://www.linkedin.com/in/jairlopesjr', '_blank')}
+          >
+            <Linkedin size={16} className="mr-1" />
+            LinkedIn
+          </Button>
+          <Button
+            size="sm"
+            className="bg-pink-500 hover:bg-pink-600 text-white shadow-lg transition-all duration-300 hover:scale-105"
+            onClick={() => window.open('https://www.instagram.com/jairlopes.inova', '_blank')}
+          >
+            <Instagram size={16} className="mr-1" />
+            Instagram
+          </Button>
+          <Button
+            size="sm"
+            className="bg-green-500 hover:bg-green-600 text-white shadow-lg transition-all duration-300 hover:scale-105"
+            onClick={() => window.open('https://wa.me/5571992888890', '_blank')}
+          >
+            <MessageCircle size={16} className="mr-1" />
+            WhatsApp
+          </Button>
+        </div>
+      </div>
 
-          {/* Info */}
-          <div className="text-center md:text-left flex-1 text-white">
-            <h1 className="text-3xl md:text-4xl font-bold mb-2 drop-shadow-lg">Jair Costa Lopes Junior</h1>
-            <p className="text-base md:text-lg text-white/90 mb-4 drop-shadow leading-snug">
-              Eng. de Dados Sênior | Análise de Dados | Gestão da Inovação | Inteligência Artificial | IoT | Governança Digital | Transformação Digital | Smart Cities & Sustentabilidade | Saneamento & Recursos Hídricos | Acessibilida Digital | Gestão Agil
-            </p>
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-              <div className="flex items-center gap-2 drop-shadow">
-                <MapPin size={16} />
-                <span>Salvador - BA, Brasil</span>
-              </div>
-              <div className="flex items-center gap-2 drop-shadow">
-                <Mail size={16} />
-                <span>jjuniorlopes@gmail.com</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Buttons */}
-          <div className="flex flex-col gap-3">
-            <Button
-              className="bg-[#0A66C2] hover:bg-[#004182] text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-              onClick={() => window.open('https://www.linkedin.com/in/jairlopesjr', '_blank')}
-            >
-              <Linkedin size={20} className="mr-2" />
-              LinkedIn
-            </Button>
-            <Button
-              className="bg-pink-500 hover:bg-pink-600 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-              onClick={() => window.open('https://www.instagram.com/jairlopes.inova', '_blank')}
-            >
-              <Instagram size={20} className="mr-2" />
-              Instagram
-            </Button>
-            <Button
-              className="bg-green-500 hover:bg-green-600 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-              onClick={() => window.open('https://wa.me/5571992888890', '_blank')}
-            >
-              <MessageCircle size={20} className="mr-2" />
-              WhatsApp
-            </Button>
-          </div>
+      {/* Info section below banner */}
+      <div className="bg-white px-6 md:px-10 pt-14 md:pt-16 pb-6">
+        <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Jair Costa Lopes Junior</h1>
+        <p className="text-sm md:text-base text-gray-700 mb-3 leading-relaxed">
+          Eng. de Dados Sênior | Análise de Dados | Gestão da Inovação | Inteligência Artificial | IoT | Governança Digital | Transformação Digital | Smart Cities & Sustentabilidade | Saneamento & Recursos Hídricos | Acessibilidade Digital | Gestão Ágil
+        </p>
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-gray-600">
+          <span className="flex items-center gap-1">
+            <MapPin size={14} />
+            Salvador - BA, Brasil
+          </span>
+          <span className="text-gray-400">·</span>
+          <a
+            href="#contato"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="text-[#0A66C2] hover:underline font-medium"
+          >
+            Informações de contato
+          </a>
         </div>
       </div>
     </Card>
