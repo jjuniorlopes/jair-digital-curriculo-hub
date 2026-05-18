@@ -38,11 +38,12 @@ const ProfileHeader = () => (
           }}
         >
           {/* Text + tags overlay */}
-          <div className="absolute inset-0 flex flex-col justify-center pl-32 md:pl-48 pr-3 md:pr-4">
+          <div className="absolute inset-0 flex flex-col items-end justify-center pl-32 md:pl-40 pr-2 md:pr-3 text-right">
             <h2 className="text-white font-extrabold leading-tight drop-shadow-lg text-base sm:text-lg md:text-2xl lg:text-3xl mb-3 md:mb-5 max-w-3xl">
               Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil
             </h2>
-            <div className="flex flex-wrap gap-1.5 md:gap-2 max-w-3xl">
+            <div className="flex flex-wrap justify-end gap-1.5 md:gap-2 max-w-3xl">
+
               <span className="px-2.5 py-1 rounded-md bg-[#1d4ed8] text-white text-[10px] md:text-xs font-bold shadow">INTELIGÊNCIA ARTIFICIAL</span>
               <span className="px-2.5 py-1 rounded-md bg-[#0f766e] text-white text-[10px] md:text-xs font-bold shadow">SCRUM</span>
               <span className="px-2.5 py-1 rounded-md bg-[#6b21a8] text-white text-[10px] md:text-xs font-bold shadow">KANBAN</span>
