@@ -47,11 +47,14 @@ const ProfileHeader = () => (
           />
         </div>
 
-        {/* Action buttons - bottom right overlapping banner */}
-        <div className="absolute right-3 md:right-6 -bottom-6 md:bottom-4 z-20 flex flex-row gap-2 md:gap-3">
+      </div>
+
+      {/* Action buttons row - below banner, aligned right */}
+      <div className="bg-white px-6 md:px-10 pt-4">
+        <div className="flex justify-end flex-wrap gap-2 md:gap-3">
           <Button
             size="sm"
-            className="bg-[#0A66C2] hover:bg-[#004182] text-white shadow-lg transition-all duration-300 hover:scale-105"
+            className="bg-[#0A66C2] hover:bg-[#004182] text-white shadow-md transition-all duration-300 hover:scale-105"
             onClick={() => window.open('https://www.linkedin.com/in/jairlopesjr', '_blank')}
           >
             <Linkedin size={16} className="mr-1" />
@@ -59,7 +62,7 @@ const ProfileHeader = () => (
           </Button>
           <Button
             size="sm"
-            className="bg-pink-500 hover:bg-pink-600 text-white shadow-lg transition-all duration-300 hover:scale-105"
+            className="bg-pink-500 hover:bg-pink-600 text-white shadow-md transition-all duration-300 hover:scale-105"
             onClick={() => window.open('https://www.instagram.com/jairlopes.inova', '_blank')}
           >
             <Instagram size={16} className="mr-1" />
@@ -67,7 +70,7 @@ const ProfileHeader = () => (
           </Button>
           <Button
             size="sm"
-            className="bg-green-500 hover:bg-green-600 text-white shadow-lg transition-all duration-300 hover:scale-105"
+            className="bg-green-500 hover:bg-green-600 text-white shadow-md transition-all duration-300 hover:scale-105"
             onClick={() => window.open('https://wa.me/5571992888890', '_blank')}
           >
             <MessageCircle size={16} className="mr-1" />
@@ -77,7 +80,7 @@ const ProfileHeader = () => (
       </div>
 
       {/* Info section below banner */}
-      <div className="bg-white px-6 md:px-10 pt-14 md:pt-16 pb-6">
+      <div className="bg-white px-6 md:px-10 pt-10 md:pt-12 pb-6">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Jair Costa Lopes Junior</h1>
         <p className="text-sm md:text-base text-gray-700 mb-3 leading-relaxed">
           Eng. de Dados Sênior | Análise de Dados | Gestão da Inovação | Inteligência Artificial | IoT | Governança Digital | Transformação Digital | Smart Cities & Sustentabilidade | Saneamento & Recursos Hídricos | Acessibilidade Digital | Gestão Ágil
