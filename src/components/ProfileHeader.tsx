@@ -4,7 +4,7 @@ import { Mail, Linkedin, Instagram, MessageCircle, MapPin, Cloud, Database, Brai
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-const bannerUrl = "/lovable-uploads/banner_principal_jair.png";
+const bannerUrl = "/lovable-uploads/banner_principal_jair-2.png";
 const photoUrl = "/lovable-uploads/profile-photo.png";
 
 const resumoParagrafos = [
