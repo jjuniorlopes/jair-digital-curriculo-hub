@@ -8,7 +8,7 @@ const awards = [
   { date: "12/2025", title: "Projeto AguaGuard", desc: "Finalista entre os 7 melhores trabalhos de IA e Desafios Socioambientais da Amazônia, do I2A2." },
   { date: "10/2022", title: "SMART WATER – 3º lugar", desc: "Congresso SUCESSO/Ba com projeto de tecnologias inovadoras da indústria 4.0." },
   { date: "05/2022", title: "1º lugar Hackathon Embasa", desc: "Semana de Conhecimento Embasa." },
-  { date: "05/2004", title: "1º lugar Fórum Unimed", desc: "Fórum das Unimed Norte/Nordeste e Centro Oeste." }
+  { date: "05/2004", title: "1º lugar Fórum Unimed", desc: "Fórum das Unimed Norte/Nordeste e Centro Oeste do projeto de otimização de banco de dados em ERP." }
 ];
 
 const AwardsSection = () => (
