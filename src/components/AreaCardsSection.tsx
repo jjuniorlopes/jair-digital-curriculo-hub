@@ -33,7 +33,7 @@ const areas = [
   {
     title: "Governança de Dados",
     icon: <CheckCircle2 className={tealIcon} size={28} />,
-    desc: "Implantação de processos de governança e proteção de dados em gestão pública e privada.",
+    desc: "Implantação de processos de governança digital e proteção de dados em gestão pública e privada.",
     color: "border-green-200 hover:border-green-400"
   },
   {
