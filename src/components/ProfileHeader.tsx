@@ -8,12 +8,23 @@ const bannerUrl = "/lovable-uploads/banner_principal_jair-2.png";
 const photoUrl = "/lovable-uploads/profile-photo.png";
 
 const resumoParagrafos = [
-  "Profissional com mais de 30 anos de experiência em Tecnologia da Informação, atuando de forma estratégica na interseção entre Engenharia de Dados, Análise de Dados, Inteligência Artificial (incluindo IA Generativa), Internet das Coisas (IoT), Gestão Ágil, Governança Digital e Transformação Digital.",
-  "Atuei em empresas dos setores de energia, saúde suplementar, financeiro e saneamento, liderenando e participando de projetos de alto impacto focados em inovação e eficiência operacional, aplicando dados e tecnologias emergentes para resolver problemas de negócio — com ênfase em Smart Cities & Sustentabilidade, Acessibilidade Digital, Saneamento Básico, Recursos Hídricos e Gestão Pública.",
-  "Possuo sólida experiência na construção de arquiteturas de dados, integração de sistemas e desenvolvimento de soluções analíticas utilizando bancos de dados relacionais e não relacionais, além da aplicação de IA Generativa para geração de insights, automação e apoio à tomada de decisão com Gestão Ágil (Scrum e Kanban) e OKRs.",
-  "Minha atuação inclui projetos de Indústria 4.0, soluções ergonômicas digitais, governança de dados, gestão de ativos e redução de perdas, contribuindo diretamente para melhoria de eficiência operacional e inovação organizacional.",
-  "Sou reconhecido pela capacidade de conectar tecnologia à estratégia de negócios, transformando dados em valor e soluções digitais em resultados concretos.",
-  "📩 Aberto a conexões e oportunidades para projetos estratégicos, inovação e transformação digital."
+  "Profissional com mais de 30 anos de experiência em Tecnologia da Informação, atuando estrategicamente na interseção entre Engenharia de Dados, Análise de Dados, Inteligência Artificial (incluindo IA Generativa), Internet das Coisas (IoT), Governança Digital, Gestão Ágil e Transformação Digital.",
+  "Atualmente, sou concursado na Empresa Baiana de Águas e Saneamento S.A. (Embasa) e atuo também no Parque Tecnológico da Bahia como mentor em Engenharia de Dados, Engenharia de Prompt aplicada à IA e IoT. Integro ainda o grupo técnico do Governo da Bahia no Programa Consórcio Bahia para Gestão Pública Consorcial, parceria entre EMBASA e SEPLAN, apoiando iniciativas de governança digital, computação em nuvem, análise de dados e inteligência artificial.",
+  "Ao longo da minha trajetória, atuei nos setores de energia, saúde suplementar, financeiro, saneamento e desenvolvimento de sistemas, liderando e participando de projetos voltados à inovação, eficiência operacional e transformação digital.",
+  "Possuo sólida experiência em arquitetura e engenharia de dados, integração de sistemas e desenvolvimento de soluções analíticas com bancos de dados relacionais e não relacionais, além da aplicação de IA Generativa para automação, geração de insights e apoio à tomada de decisão.",
+  "Minha atuação inclui projetos relacionados a Smart Cities & Sustentabilidade, Acessibilidade Digital, Recursos Hídricos, Saneamento Básico, Indústria 4.0, governança de dados, gestão de ativos e redução de perdas.",
+  "🏆 Premiações e Reconhecimentos:",
+  "• Projeto AguaGuard — Finalista entre os 7 melhores projetos de IA e Desafios Socioambientais da Amazônia pelo I2A2",
+  "• Projeto SMART WATER — 3º lugar no Congresso SUCESSO/BA com soluções inovadoras aplicadas à Indústria 4.0",
+  "• 1º lugar no Hackathon EMBASA com projeto de controle de H2S em ETE utilizando redes IoT",
+  "• 1º lugar no Fórum Unimed com projeto de otimização de banco de dados em ERP",
+  "📚 Publicações e Apresentações:",
+  "• Autor de cinco artigos no 33º Congresso da ABES",
+  "• Publicações na VII e VIII COBESA e na ABINC",
+  "• Autor de dois artigos no 21º SILUBESA",
+  "• Palestrante em webinars no SENAI CIMATEC e FIEB sobre Tecnologias da Transformação Digital no Saneamento",
+  "Sou reconhecido pela capacidade de conectar tecnologia à estratégia de negócios, transformando dados em valor, inovação em resultados concretos e tecnologia em impacto positivo para organizações e sociedade.",
+  "📩 Aberto a conexões, parcerias e projetos estratégicos em Dados, IA, Inovação, Sustentabilidade e Transformação Digital."
 ];
 
 const perfilCards = [
