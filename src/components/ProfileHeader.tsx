@@ -85,9 +85,8 @@ const ProfileHeader = () => (
         <div className="flex justify-end flex-wrap gap-2 md:gap-3">
           <Button
             size="sm"
-        <p className="text-sm md:text-base text-gray-700 mb-3 leading-relaxed">
-          Análise de Dados | Administração de Banco de Dados | Inteligência Artificial | IoT | Gestão da Inovação | Governança Digital | Transformação Digital | Smart Cities | Acessibilidade Digital | Gestão Ágil | ESG | Saneamento
-        </p>
+            className="bg-[#0A66C2] hover:bg-[#004182] text-white shadow-md transition-all duration-300 hover:scale-105"
+            onClick={() => window.open('https://www.linkedin.com/in/jairlopesjr', '_blank')}
           >
             <Linkedin size={16} className="mr-1" />
             LinkedIn
@@ -115,7 +114,7 @@ const ProfileHeader = () => (
       <div className="bg-white px-6 md:px-10 pt-10 md:pt-12 pb-6">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Jair Costa Lopes Junior</h1>
         <p className="text-sm md:text-base text-gray-700 mb-3 leading-relaxed">
-          Eng. de Dados Sênior | Análise de Dados | Gestão da Inovação | Inteligência Artificial | IoT | Governança Digital | Transformação Digital | Smart Cities & Sustentabilidade | Saneamento & Recursos Hídricos | Acessibilidade Digital | Gestão Ágil
+          Análise de Dados | Administração de Banco de Dados | Inteligência Artificial | IoT | Gestão da Inovação | Governança Digital | Transformação Digital | Smart Cities | Acessibilidade Digital | Gestão Ágil | ESG | Saneamento
         </p>
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-gray-600">
           <span className="flex items-center gap-1">
