@@ -85,8 +85,9 @@ const ProfileHeader = () => (
         <div className="flex justify-end flex-wrap gap-2 md:gap-3">
           <Button
             size="sm"
-            className="bg-[#0A66C2] hover:bg-[#004182] text-white shadow-md transition-all duration-300 hover:scale-105"
-            onClick={() => window.open('https://www.linkedin.com/in/jairlopesjr', '_blank')}
+        <p className="text-sm md:text-base text-gray-700 mb-3 leading-relaxed">
+          Análise de Dados | Administração de Banco de Dados | Inteligência Artificial | IoT | Gestão da Inovação | Governança Digital | Transformação Digital | Smart Cities | Acessibilidade Digital | Gestão Ágil | ESG | Saneamento
+        </p>
           >
             <Linkedin size={16} className="mr-1" />
             LinkedIn
