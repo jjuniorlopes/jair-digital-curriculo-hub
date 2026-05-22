@@ -1,6 +1,4 @@
-
-import React, { useEffect } from "react";
-import { Mail, Linkedin, Instagram, MessageCircle, MapPin, ExternalLink } from "lucide-react";
+import { Mail, Instagram, MessageCircle, MapPin, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -12,20 +10,6 @@ const contactInfo = [
 ];
 
 const ContactSection = () => {
-  useEffect(() => {
-    const SRC = "https://platform.linkedin.com/badges/js/profile.js";
-    const existing = document.querySelector(`script[src="${SRC}"]`);
-    if (!existing) {
-      const script = document.createElement("script");
-      script.src = SRC;
-      script.async = true;
-      script.defer = true;
-      script.type = "text/javascript";
-      document.body.appendChild(script);
-    } else if ((window as any).LIRenderAll) {
-      (window as any).LIRenderAll();
-    }
-  }, []);
 
   return (
   <Card className="shadow-lg border-0 animate-slide-up" style={{ animationDelay: '0.5s' }}>
