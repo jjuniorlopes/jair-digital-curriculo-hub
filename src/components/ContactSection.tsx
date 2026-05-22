@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 
 const contactInfo = [
   { icon: Mail, label: "Email", value: "jjuniorlopes@gmail.com", action: () => window.open('mailto:jjuniorlopes@gmail.com'), color: "text-blue-600" },
-  { icon: Linkedin, label: "LinkedIn", value: "Jair Costa Lopes Junior", action: () => window.open('https://www.linkedin.com/in/jairlopesjr', '_blank'), color: "text-blue-700" },
   { icon: Instagram, label: "Instagram", value: "@jairlopes.inova", action: () => window.open('https://www.instagram.com/jairlopes.inova', '_blank'), color: "text-pink-600" },
   { icon: MessageCircle, label: "WhatsApp", value: "+55 71 99288-8890", action: () => window.open('https://wa.me/5571992888890', '_blank'), color: "text-green-500" },
   { icon: MapPin, label: "Localização", value: "Salvador - BA, Brasil", action: null as (() => void) | null, color: "text-green-600" }
@@ -35,6 +34,30 @@ const ContactSection = () => {
     </div>
     <CardContent className="p-6">
       <div className="grid md:grid-cols-3 gap-6 items-start">
+        <div className="flex flex-col items-center md:items-start">
+          <h3 className="text-lg font-semibold mb-4 text-gray-800">Cartão LinkedIn</h3>
+          <div className="w-full flex justify-center md:justify-start">
+            <div
+              className="badge-base LI-profile-badge"
+              data-locale="pt_BR"
+              data-size="medium"
+              data-theme="light"
+              data-type="VERTICAL"
+              data-vanity="jairlopesjr"
+              data-version="v1"
+            >
+              <a
+                className="badge-base__link LI-simple-link"
+                href="https://br.linkedin.com/in/jairlopesjr?trk=profile-badge"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Jair Lopes
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div>
           <h3 className="text-lg font-semibold mb-4 text-gray-800">Informações de Contato</h3>
           <div className="space-y-4">
@@ -54,28 +77,6 @@ const ContactSection = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        <div className="flex flex-col items-center">
-          <h3 className="text-lg font-semibold mb-4 text-gray-800">Cartão LinkedIn</h3>
-          <div
-            className="badge-base LI-profile-badge"
-            data-locale="pt_BR"
-            data-size="medium"
-            data-theme="light"
-            data-type="VERTICAL"
-            data-vanity="jairlopesjr"
-            data-version="v1"
-          >
-            <a
-              className="badge-base__link LI-simple-link"
-              href="https://br.linkedin.com/in/jairlopesjr?trk=profile-badge"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Jair Lopes
-            </a>
           </div>
         </div>
 
