@@ -17,31 +17,7 @@ const ContactSection = () => {
       <h2 className="text-xl font-bold">Entre em Contato</h2>
     </div>
     <CardContent className="p-6">
-      <div className="grid md:grid-cols-3 gap-6 items-start">
-        <div className="flex flex-col items-center md:items-start">
-          <h3 className="text-lg font-semibold mb-4 text-gray-800">Cartão LinkedIn</h3>
-          <div className="w-full flex justify-center md:justify-start">
-            <div
-              className="badge-base LI-profile-badge"
-              data-locale="pt_BR"
-              data-size="medium"
-              data-theme="light"
-              data-type="VERTICAL"
-              data-vanity="jairlopesjr"
-              data-version="v1"
-            >
-              <a
-                className="badge-base__link LI-simple-link"
-                href="https://br.linkedin.com/in/jairlopesjr?trk=profile-badge"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Jair Lopes
-              </a>
-            </div>
-          </div>
-        </div>
-
+      <div className="grid md:grid-cols-2 gap-6 items-start">
         <div>
           <h3 className="text-lg font-semibold mb-4 text-gray-800">Informações de Contato</h3>
           <div className="space-y-4">
