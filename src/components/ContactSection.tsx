@@ -44,7 +44,7 @@ const ContactSection = () => {
             data-version="v1"
           >
             <a
-              className="badge-base__link LI-simple-link"
+              className="badge-base__link LI-simple-link sr-only"
               href="https://br.linkedin.com/in/jairlopesjr?trk=profile-badge"
               target="_blank"
               rel="noopener noreferrer"
