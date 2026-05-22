@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Mail, Linkedin, Instagram, MessageCircle, MapPin, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -12,13 +12,29 @@ const contactInfo = [
   { icon: MapPin, label: "Localização", value: "Salvador - BA, Brasil", action: null as (() => void) | null, color: "text-green-600" }
 ];
 
-const ContactSection = () => (
+const ContactSection = () => {
+  useEffect(() => {
+    const SRC = "https://platform.linkedin.com/badges/js/profile.js";
+    const existing = document.querySelector(`script[src="${SRC}"]`);
+    if (!existing) {
+      const script = document.createElement("script");
+      script.src = SRC;
+      script.async = true;
+      script.defer = true;
+      script.type = "text/javascript";
+      document.body.appendChild(script);
+    } else if ((window as any).LIRenderAll) {
+      (window as any).LIRenderAll();
+    }
+  }, []);
+
+  return (
   <Card className="shadow-lg border-0 animate-slide-up" style={{ animationDelay: '0.5s' }}>
     <div className="bg-[#1a7a7a] text-white rounded-t-lg p-4">
       <h2 className="text-xl font-bold">Entre em Contato</h2>
     </div>
     <CardContent className="p-6">
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-3 gap-6 items-start">
         <div>
           <h3 className="text-lg font-semibold mb-4 text-gray-800">Informações de Contato</h3>
           <div className="space-y-4">
@@ -40,6 +56,29 @@ const ContactSection = () => (
             ))}
           </div>
         </div>
+
+        <div className="flex flex-col items-center">
+          <h3 className="text-lg font-semibold mb-4 text-gray-800">Cartão LinkedIn</h3>
+          <div
+            className="badge-base LI-profile-badge"
+            data-locale="pt_BR"
+            data-size="medium"
+            data-theme="light"
+            data-type="VERTICAL"
+            data-vanity="jairlopesjr"
+            data-version="v1"
+          >
+            <a
+              className="badge-base__link LI-simple-link"
+              href="https://br.linkedin.com/in/jairlopesjr?trk=profile-badge"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Jair Lopes
+            </a>
+          </div>
+        </div>
+
         <div>
           <h3 className="text-lg font-semibold mb-4 text-gray-800">Vamos Conversar</h3>
           <p className="text-gray-600 mb-4">
@@ -71,6 +110,7 @@ const ContactSection = () => (
       </div>
     </CardContent>
   </Card>
-);
+  );
+};
 
 export default ContactSection;
