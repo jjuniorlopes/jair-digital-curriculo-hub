@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "jjuniorlopes@gmail.com", action: () => window.open('mailto:jjuniorlopes@gmail.com'), color: "text-blue-600" },
+  { icon: Mail, label: "Email", value: "tecnologiadojair@gmail.com", action: () => window.open('mailto:tecnologiadojair@gmail.com'), color: "text-blue-600" },
   { icon: Instagram, label: "Instagram", value: "@jairlopes.inova", action: () => window.open('https://www.instagram.com/jairlopes.inova', '_blank'), color: "text-pink-600" },
   { icon: MessageCircle, label: "WhatsApp", value: "+55 71 99288-8890", action: () => window.open('https://wa.me/5571992888890', '_blank'), color: "text-green-500" },
   { icon: MapPin, label: "Localização", value: "Salvador - BA, Brasil", action: null as (() => void) | null, color: "text-green-600" }
@@ -85,7 +85,7 @@ const ContactSection = () => {
           <div className="flex flex-col sm:flex-row gap-3">
             <Button
               className="bg-blue-600 hover:bg-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-lg"
-              onClick={() => window.open('mailto:jjuniorlopes@gmail.com')}
+              onClick={() => window.open('mailto:tecnologiadojair@gmail.com')}
             >
               <Mail className="w-4 h-4 mr-2" />
               Enviar Email
