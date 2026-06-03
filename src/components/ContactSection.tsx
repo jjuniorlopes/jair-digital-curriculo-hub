@@ -85,7 +85,7 @@ const ContactSection = () => {
           <div className="flex flex-col sm:flex-row gap-3">
             <Button
               className="bg-blue-600 hover:bg-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-lg"
-              onClick={() => window.open('mailto:jjuniorlopes@gmail.com')}
+              onClick={() => window.open('mailto:tecnologiadojair@gmail.com')}
             >
               <Mail className="w-4 h-4 mr-2" />
               Enviar Email
