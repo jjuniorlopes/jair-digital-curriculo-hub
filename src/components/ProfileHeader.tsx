@@ -54,7 +54,7 @@ const ProfileHeader = () => (
 
 
         {/* Profile photo - bottom left overlapping banner (fully visible) */}
-        <div className="absolute left-4 sm:left-6 md:left-10 lg:left-14 -bottom-8 sm:-bottom-10 md:-bottom-12 lg:-bottom-14 z-20 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white bg-white transition-transform duration-500 hover:scale-105">
+        <div className="absolute left-4 sm:left-6 md:left-10 lg:left-14 -bottom-8 sm:-bottom-10 md:-bottom-12 lg:-bottom-14 z-20 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden bg-white border-4 border-white ring-4 ring-white/40 shadow-[0_8px_24px_rgba(13,92,92,0.35),0_2px_8px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:scale-105">
           <img
             src={photoUrl}
             alt="Foto de Jair Costa Lopes Junior"
