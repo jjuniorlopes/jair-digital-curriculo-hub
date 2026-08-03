@@ -4,7 +4,7 @@ import { Linkedin, Instagram, MessageCircle, MapPin, Cloud, Database, BrainCircu
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-import bannerAsset from "@/assets/banner-linkedin-novo.png.asset.json";
+import bannerAsset from "@/assets/banner-linkedin-novo.png";
  
 const photoUrl = "/lovable-uploads/profile-photo.png";
 
