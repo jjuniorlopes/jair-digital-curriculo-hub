@@ -4,28 +4,10 @@ import { Linkedin, Instagram, MessageCircle, MapPin, Cloud, Database, BrainCircu
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-import bannerBg from "@/assets/banner-bg.png";
+import bannerAsset from "@/assets/banner-linkedin-novo.png.asset.json";
  
 const photoUrl = "/lovable-uploads/profile-photo.png";
 
-// Heading + colored tag pills overlaid on the banner (responsive HTML for legibility)
-const bannerHeading =
-  "Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil";
-
-const bannerTags: { label: string; className: string }[] = [
-  { label: "IA", className: "bg-violet-600" },
-  { label: "Scrum", className: "bg-orange-500" },
-  { label: "Kanban", className: "bg-blue-600" },
-  { label: "OKR", className: "bg-emerald-600" },
-  { label: "PMI / PMBOK", className: "bg-rose-600" },
-  { label: "SQL", className: "bg-indigo-600" },
-  { label: "Design Thinking", className: "bg-pink-500" },
-  { label: "IoT", className: "bg-cyan-600" },
-  { label: "Data Engineering", className: "bg-amber-600" },
-  { label: "ESG", className: "bg-green-600" },
-  { label: "Smart Cities", className: "bg-sky-600" },
-  { label: "Acessibilidade", className: "bg-fuchsia-600" },
-];
 
 const resumoParagrafos = [
   "Profissional com mais de 30 anos de experiência em Tecnologia da Informação, atuando estrategicamente na interseção entre Engenharia de Dados, Análise de Dados, Inteligência Artificial (incluindo IA Generativa), Internet das Coisas (IoT), Governança Digital, Gestão Ágil e Transformação Digital.",
@@ -60,35 +42,16 @@ const ProfileHeader = () => (
   <div className="animate-fade-in">
     {/* Banner with photo overlapping bottom-left and action buttons overlapping bottom-right */}
     <Card className="mb-8 shadow-lg border-0 overflow-hidden">
-      <div className="relative w-full overflow-hidden bg-[#0d5c5c] aspect-[16/10] sm:aspect-[16/9] lg:aspect-[2/1] min-h-[224px] sm:min-h-[260px] lg:min-h-[320px]">
+      <div className="relative w-full overflow-hidden bg-[#0d5c5c] aspect-[1772/886]">
         <img
-          src={bannerBg}
-          alt="Banner de tecnologia com lâmpada, circuitos e ícones de IoT e dados"
+          src={bannerAsset.url}
+          alt="Banner: Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil"
           loading="eager"
-          width={1920}
-          height={960}
+          width={1772}
+          height={886}
           className="absolute inset-0 block w-full h-full object-cover"
         />
 
-        {/* Subtle scrim to guarantee overlay text contrast on any device */}
-        <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-black/40 via-black/10 to-black/55" />
-
-        {/* Responsive HTML overlay: heading + colored skill tags (right side) */}
-        <div className="absolute inset-0 z-10 flex flex-col justify-center items-end gap-2 sm:gap-3 lg:gap-4 px-4 sm:px-6 md:px-10 lg:px-14 py-5 sm:py-7 md:py-10 lg:py-12 text-right">
-          <h2 className="max-w-[60%] sm:max-w-[58%] lg:max-w-[56%] text-white font-extrabold leading-tight drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)] text-sm sm:text-lg md:text-2xl lg:text-3xl">
-            {bannerHeading}
-          </h2>
-          <div className="flex flex-wrap justify-end gap-1.5 sm:gap-2 lg:gap-2.5 max-w-[60%] sm:max-w-[58%] lg:max-w-[56%]">
-            {bannerTags.map((t) => (
-              <span
-                key={t.label}
-                className={`${t.className} text-white font-semibold rounded-full px-2 py-0.5 sm:px-2.5 sm:py-1 md:px-3 md:py-1 text-[10px] sm:text-xs md:text-sm shadow-md whitespace-nowrap`}
-              >
-                {t.label}
-              </span>
-            ))}
-          </div>
-        </div>
 
         {/* Profile photo - bottom left overlapping banner */}
         <div className="absolute left-4 sm:left-6 md:left-10 lg:left-14 -bottom-10 sm:-bottom-11 md:-bottom-12 lg:-bottom-14 z-20 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white bg-white transition-transform duration-500 hover:scale-105">
