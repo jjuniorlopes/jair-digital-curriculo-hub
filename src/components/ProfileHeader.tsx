@@ -74,15 +74,15 @@ const ProfileHeader = () => (
         <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-black/40 via-black/10 to-black/55" />
 
         {/* Responsive HTML overlay: heading + colored skill tags (right side) */}
-        <div className="absolute inset-0 z-10 flex flex-col justify-center items-end gap-2 md:gap-3 px-4 py-4 md:px-12 md:py-10 text-right">
-          <h2 className="max-w-[62%] text-white font-extrabold leading-tight drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)] text-sm sm:text-lg md:text-2xl lg:text-3xl">
+        <div className="absolute inset-0 z-10 flex flex-col justify-center items-end gap-2 sm:gap-3 lg:gap-4 px-4 sm:px-6 md:px-10 lg:px-14 py-5 sm:py-7 md:py-10 lg:py-12 text-right">
+          <h2 className="max-w-[60%] sm:max-w-[58%] lg:max-w-[56%] text-white font-extrabold leading-tight drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)] text-sm sm:text-lg md:text-2xl lg:text-3xl">
             {bannerHeading}
           </h2>
-          <div className="flex flex-wrap justify-end gap-1.5 md:gap-2 max-w-[62%]">
+          <div className="flex flex-wrap justify-end gap-1.5 sm:gap-2 lg:gap-2.5 max-w-[60%] sm:max-w-[58%] lg:max-w-[56%]">
             {bannerTags.map((t) => (
               <span
                 key={t.label}
-                className={`${t.className} text-white font-semibold rounded-full px-2 py-0.5 md:px-3 md:py-1 text-[10px] sm:text-xs md:text-sm shadow-md whitespace-nowrap`}
+                className={`${t.className} text-white font-semibold rounded-full px-2 py-0.5 sm:px-2.5 sm:py-1 md:px-3 md:py-1 text-[10px] sm:text-xs md:text-sm shadow-md whitespace-nowrap`}
               >
                 {t.label}
               </span>
