@@ -4,7 +4,7 @@ import { Linkedin, Instagram, MessageCircle, MapPin, Cloud, Database, BrainCircu
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-import bannerAsset from "@/assets/banner-jair-linkedin-v3.png.asset.json";
+import bannerAsset from "@/assets/banner-curriculo-novo.png.asset.json";
  
 const photoUrl = "/lovable-uploads/profile-photo.png";
 
@@ -42,15 +42,16 @@ const ProfileHeader = () => (
   <div className="animate-fade-in">
     {/* Banner with photo overlapping bottom-left and action buttons overlapping bottom-right */}
     <Card className="mb-8 shadow-lg border-0 overflow-hidden">
-      <div className="relative w-full bg-[#0d5c5c] aspect-[1659/948]">
+      <div className="relative w-full bg-[#0d5c5c] aspect-[1119/291]">
         <img
           src={bannerAsset.url}
           alt="Banner: Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil"
           loading="eager"
-          width={1659}
-          height={948}
+          width={1119}
+          height={291}
           className="absolute inset-0 block w-full h-full object-contain"
         />
+
 
 
         {/* Profile photo - bottom left overlapping banner (fully visible) */}
