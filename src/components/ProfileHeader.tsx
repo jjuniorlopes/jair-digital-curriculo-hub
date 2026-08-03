@@ -102,7 +102,7 @@ const ProfileHeader = () => (
       </div>
 
       {/* Action buttons row - below banner, aligned right */}
-      <div className="bg-white px-6 md:px-10 pt-4">
+      <div className="bg-white px-4 sm:px-6 md:px-10 lg:px-14 pt-4">
         <div className="flex justify-end flex-wrap gap-2 md:gap-3">
           <Button
             size="sm"
