@@ -42,7 +42,7 @@ const ProfileHeader = () => (
   <div className="animate-fade-in">
     {/* Banner with photo overlapping bottom-left and action buttons overlapping bottom-right */}
     <Card className="mb-8 shadow-lg border-0 overflow-hidden">
-      <div className="relative w-full overflow-hidden bg-[#0d5c5c] aspect-[1772/886]">
+      <div className="relative w-full bg-[#0d5c5c] aspect-[1772/886]">
         <img
           src={bannerAsset.url}
           alt="Banner: Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil"
@@ -53,14 +53,15 @@ const ProfileHeader = () => (
         />
 
 
-        {/* Profile photo - bottom left overlapping banner */}
-        <div className="absolute left-4 sm:left-6 md:left-10 lg:left-14 -bottom-10 sm:-bottom-11 md:-bottom-12 lg:-bottom-14 z-20 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white bg-white transition-transform duration-500 hover:scale-105">
+        {/* Profile photo - bottom left overlapping banner (fully visible) */}
+        <div className="absolute left-4 sm:left-6 md:left-10 lg:left-14 -bottom-8 sm:-bottom-10 md:-bottom-12 lg:-bottom-14 z-20 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white bg-white transition-transform duration-500 hover:scale-105">
           <img
             src={photoUrl}
             alt="Foto de Jair Costa Lopes Junior"
-            className="w-full h-full object-cover bg-white"
+            className="w-full h-full object-cover object-top bg-white"
           />
         </div>
+
 
       </div>
 
