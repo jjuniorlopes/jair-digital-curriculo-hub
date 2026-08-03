@@ -4,7 +4,9 @@ import { Mail, Linkedin, Instagram, MessageCircle, MapPin, Cloud, Database, Brai
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-const bannerUrl = "/lovable-uploads/banner_principal_jair-2.png";
+import bannerAsset from "@/assets/banner_novo_linkdin.png.asset.json";
+
+const bannerUrl = bannerAsset.url;
 const photoUrl = "/lovable-uploads/profile-photo.png";
 
 const resumoParagrafos = [
@@ -42,32 +44,13 @@ const ProfileHeader = () => (
     <Card className="mb-8 shadow-lg border-0 overflow-hidden">
       <div className="relative w-full">
         <div
-          className="relative w-full bg-cover bg-center aspect-[1920/576] bg-[#1a7a7a]"
+          className="relative w-full bg-cover bg-center aspect-[1920/576] bg-[#0d5c5c]"
           style={{
-            backgroundImage: `linear-gradient(rgba(26,122,122,0.85), rgba(26,122,122,0.85)), url(${bannerUrl})`,
+            backgroundImage: `url(${bannerUrl})`,
             minHeight: '260px',
           }}
-        >
-          {/* Text + tags overlay */}
-          <div className="absolute inset-0 flex flex-col items-end justify-center pl-32 md:pl-40 pr-2 md:pr-3 text-right">
-            <h2 className="text-white font-extrabold leading-tight drop-shadow-lg text-base sm:text-lg md:text-2xl lg:text-3xl mb-3 md:mb-5 max-w-3xl">
-              Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil
-            </h2>
-            <div className="flex flex-wrap justify-end gap-1.5 md:gap-2 max-w-3xl">
+        />
 
-              <span className="px-2.5 py-1 rounded-md bg-[#1d4ed8] text-white text-[10px] md:text-xs font-bold shadow">INTELIGÊNCIA ARTIFICIAL</span>
-              <span className="px-2.5 py-1 rounded-md bg-[#0f766e] text-white text-[10px] md:text-xs font-bold shadow">SCRUM</span>
-              <span className="px-2.5 py-1 rounded-md bg-[#6b21a8] text-white text-[10px] md:text-xs font-bold shadow">KANBAN</span>
-              <span className="px-2.5 py-1 rounded-md bg-[#ea580c] text-white text-[10px] md:text-xs font-bold shadow">OKR</span>
-              <span className="px-2.5 py-1 rounded-md bg-[#1d4ed8] text-white text-[10px] md:text-xs font-bold shadow">PYTHON</span>
-              <span className="px-2.5 py-1 rounded-md bg-[#0f766e] text-white text-[10px] md:text-xs font-bold shadow">SQL</span>
-              <span className="px-2.5 py-1 rounded-md bg-[#334155] text-white text-[10px] md:text-xs font-bold shadow">DESIGN THINKING</span>
-              <span className="px-2.5 py-1 rounded-md bg-[#0891b2] text-white text-[10px] md:text-xs font-bold shadow">BANCO DE DADOS</span>
-              <span className="px-2.5 py-1 rounded-md bg-[#1d4ed8] text-white text-[10px] md:text-xs font-bold shadow">INTERNET DAS COISAS</span>
-              <span className="px-2.5 py-1 rounded-md bg-[#ea580c] text-white text-[10px] md:text-xs font-bold shadow">E MUITO MAIS</span>
-            </div>
-          </div>
-        </div>
 
         {/* Profile photo - bottom left overlapping banner */}
         <div className="absolute left-4 md:left-8 -bottom-10 md:-bottom-12 z-20 w-24 h-24 md:w-36 md:h-36 rounded-full overflow-hidden shadow-xl border-4 border-white bg-white transition-transform duration-500 hover:scale-105">
