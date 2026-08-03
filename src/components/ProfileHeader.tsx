@@ -44,7 +44,7 @@ const ProfileHeader = () => (
     <Card className="mb-8 shadow-lg border-0 overflow-hidden">
       <div className="relative w-full bg-[#0d5c5c] aspect-[1119/291]">
         <img
-          src={bannerAsset.url}
+          src={bannerUrl}
           alt="Banner: Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil"
           loading="eager"
           width={1119}
