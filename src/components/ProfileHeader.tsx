@@ -4,7 +4,7 @@ import { Linkedin, Instagram, MessageCircle, MapPin, Cloud, Database, BrainCircu
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-import bannerAsset from "@/assets/banner-curriculo-novo.png.asset.json";
+import bannerUrl from "@/assets/banner-curriculo-novo.png";
  
 const photoUrl = "/lovable-uploads/profile-photo.png";
 
@@ -44,7 +44,7 @@ const ProfileHeader = () => (
     <Card className="mb-8 shadow-lg border-0 overflow-hidden">
       <div className="relative w-full bg-[#0d5c5c] aspect-[1119/291]">
         <img
-          src={bannerAsset.url}
+          src={bannerUrl}
           alt="Banner: Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil"
           loading="eager"
           width={1119}
