@@ -60,15 +60,35 @@ const ProfileHeader = () => (
   <div className="animate-fade-in">
     {/* Banner with photo overlapping bottom-left and action buttons overlapping bottom-right */}
     <Card className="mb-8 shadow-lg border-0 overflow-hidden">
-      <div className="relative w-full bg-[#0d5c5c]">
+      <div className="relative w-full bg-[#0d5c5c] aspect-[2/1] min-h-[230px]">
         <img
-          src={bannerUrl}
-          alt="Banner: Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil"
-          className="block w-full h-auto object-contain"
+          src={bannerBg}
+          alt="Banner de tecnologia com lâmpada, circuitos e ícones de IoT e dados"
+          loading="eager"
+          width={1920}
+          height={960}
+          className="absolute inset-0 block w-full h-full object-cover"
         />
 
-        {/* Contrast-boost overlay for baked-in text */}
-        <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/35 via-black/10 to-black/35" />
+        {/* Subtle scrim to guarantee overlay text contrast on any device */}
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-black/40 via-black/10 to-black/55" />
+
+        {/* Responsive HTML overlay: heading + colored skill tags (right side) */}
+        <div className="absolute inset-0 z-10 flex flex-col justify-center items-end gap-2 md:gap-3 px-4 py-4 md:px-12 md:py-10 text-right">
+          <h2 className="max-w-[62%] text-white font-extrabold leading-tight drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)] text-sm sm:text-lg md:text-2xl lg:text-3xl">
+            {bannerHeading}
+          </h2>
+          <div className="flex flex-wrap justify-end gap-1.5 md:gap-2 max-w-[62%]">
+            {bannerTags.map((t) => (
+              <span
+                key={t.label}
+                className={`${t.className} text-white font-semibold rounded-full px-2 py-0.5 md:px-3 md:py-1 text-[10px] sm:text-xs md:text-sm shadow-md whitespace-nowrap`}
+              >
+                {t.label}
+              </span>
+            ))}
+          </div>
+        </div>
 
         {/* Profile photo - bottom left overlapping banner */}
         <div className="absolute left-4 md:left-8 -bottom-10 md:-bottom-12 z-20 w-24 h-24 md:w-36 md:h-36 rounded-full overflow-hidden shadow-xl border-4 border-white bg-white transition-transform duration-500 hover:scale-105">
