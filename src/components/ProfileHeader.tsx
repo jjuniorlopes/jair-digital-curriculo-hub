@@ -60,7 +60,7 @@ const ProfileHeader = () => (
   <div className="animate-fade-in">
     {/* Banner with photo overlapping bottom-left and action buttons overlapping bottom-right */}
     <Card className="mb-8 shadow-lg border-0 overflow-hidden">
-      <div className="relative w-full bg-[#0d5c5c] aspect-[2/1] min-h-[230px]">
+      <div className="relative w-full overflow-hidden bg-[#0d5c5c] aspect-[16/10] sm:aspect-[16/9] lg:aspect-[2/1] min-h-[224px] sm:min-h-[260px] lg:min-h-[320px]">
         <img
           src={bannerBg}
           alt="Banner de tecnologia com lâmpada, circuitos e ícones de IoT e dados"
