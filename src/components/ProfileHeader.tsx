@@ -4,7 +4,7 @@ import { Linkedin, Instagram, MessageCircle, MapPin, Cloud, Database, BrainCircu
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-import bannerAsset from "@/assets/banner-linkedin-novo.png";
+import bannerAsset from "@/assets/banner-jair-2026.png.asset.json";
  
 const photoUrl = "/lovable-uploads/profile-photo.png";
 
