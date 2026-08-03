@@ -46,7 +46,7 @@ const ProfileHeader = () => (
         <img
           src={bannerUrl}
           alt="Banner: Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil"
-          className="block w-full h-auto object-contain md:object-cover md:h-[280px]"
+          className="block w-full h-auto object-contain"
         />
 
         {/* Contrast-boost overlay for baked-in text */}
