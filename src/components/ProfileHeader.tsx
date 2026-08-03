@@ -42,14 +42,15 @@ const ProfileHeader = () => (
   <div className="animate-fade-in">
     {/* Banner with photo overlapping bottom-left and action buttons overlapping bottom-right */}
     <Card className="mb-8 shadow-lg border-0 overflow-hidden">
-      <div className="relative w-full">
+      <div className="relative w-full bg-[#0d5c5c]">
         <img
           src={bannerUrl}
           alt="Banner: Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil"
-          className="block w-full h-auto object-contain bg-[#0d5c5c]"
+          className="block w-full h-auto object-contain"
         />
 
-
+        {/* Contrast-boost overlay for baked-in text */}
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/35 via-black/10 to-black/35" />
 
         {/* Profile photo - bottom left overlapping banner */}
         <div className="absolute left-4 md:left-8 -bottom-10 md:-bottom-12 z-20 w-24 h-24 md:w-36 md:h-36 rounded-full overflow-hidden shadow-xl border-4 border-white bg-white transition-transform duration-500 hover:scale-105">
