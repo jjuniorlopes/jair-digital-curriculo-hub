@@ -43,13 +43,12 @@ const ProfileHeader = () => (
     {/* Banner with photo overlapping bottom-left and action buttons overlapping bottom-right */}
     <Card className="mb-8 shadow-lg border-0 overflow-hidden">
       <div className="relative w-full">
-        <div
-          className="relative w-full bg-cover bg-center aspect-[1920/576] bg-[#0d5c5c]"
-          style={{
-            backgroundImage: `url(${bannerUrl})`,
-            minHeight: '260px',
-          }}
+        <img
+          src={bannerUrl}
+          alt="Banner: Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil"
+          className="block w-full h-auto object-contain bg-[#0d5c5c]"
         />
+
 
 
         {/* Profile photo - bottom left overlapping banner */}
