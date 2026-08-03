@@ -4,7 +4,7 @@ import { Linkedin, Instagram, MessageCircle, MapPin, Cloud, Database, BrainCircu
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-import bannerAsset from "@/assets/banner-jair-2026.png.asset.json";
+import bannerAsset from "@/assets/banner-jair-linkedin-v3.png.asset.json";
  
 const photoUrl = "/lovable-uploads/profile-photo.png";
 
@@ -49,7 +49,7 @@ const ProfileHeader = () => (
           loading="eager"
           width={1659}
           height={948}
-          className="absolute inset-0 block w-full h-full object-cover"
+          className="absolute inset-0 block w-full h-full object-contain"
         />
 
 
