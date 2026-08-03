@@ -60,7 +60,7 @@ const ProfileHeader = () => (
   <div className="animate-fade-in">
     {/* Banner with photo overlapping bottom-left and action buttons overlapping bottom-right */}
     <Card className="mb-8 shadow-lg border-0 overflow-hidden">
-      <div className="relative w-full bg-[#0d5c5c] aspect-[2/1] min-h-[230px]">
+      <div className="relative w-full overflow-hidden bg-[#0d5c5c] aspect-[16/10] sm:aspect-[16/9] lg:aspect-[2/1] min-h-[224px] sm:min-h-[260px] lg:min-h-[320px]">
         <img
           src={bannerBg}
           alt="Banner de tecnologia com lâmpada, circuitos e ícones de IoT e dados"
@@ -74,15 +74,15 @@ const ProfileHeader = () => (
         <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-black/40 via-black/10 to-black/55" />
 
         {/* Responsive HTML overlay: heading + colored skill tags (right side) */}
-        <div className="absolute inset-0 z-10 flex flex-col justify-center items-end gap-2 md:gap-3 px-4 py-4 md:px-12 md:py-10 text-right">
-          <h2 className="max-w-[62%] text-white font-extrabold leading-tight drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)] text-sm sm:text-lg md:text-2xl lg:text-3xl">
+        <div className="absolute inset-0 z-10 flex flex-col justify-center items-end gap-2 sm:gap-3 lg:gap-4 px-4 sm:px-6 md:px-10 lg:px-14 py-5 sm:py-7 md:py-10 lg:py-12 text-right">
+          <h2 className="max-w-[60%] sm:max-w-[58%] lg:max-w-[56%] text-white font-extrabold leading-tight drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)] text-sm sm:text-lg md:text-2xl lg:text-3xl">
             {bannerHeading}
           </h2>
-          <div className="flex flex-wrap justify-end gap-1.5 md:gap-2 max-w-[62%]">
+          <div className="flex flex-wrap justify-end gap-1.5 sm:gap-2 lg:gap-2.5 max-w-[60%] sm:max-w-[58%] lg:max-w-[56%]">
             {bannerTags.map((t) => (
               <span
                 key={t.label}
-                className={`${t.className} text-white font-semibold rounded-full px-2 py-0.5 md:px-3 md:py-1 text-[10px] sm:text-xs md:text-sm shadow-md whitespace-nowrap`}
+                className={`${t.className} text-white font-semibold rounded-full px-2 py-0.5 sm:px-2.5 sm:py-1 md:px-3 md:py-1 text-[10px] sm:text-xs md:text-sm shadow-md whitespace-nowrap`}
               >
                 {t.label}
               </span>
@@ -91,7 +91,7 @@ const ProfileHeader = () => (
         </div>
 
         {/* Profile photo - bottom left overlapping banner */}
-        <div className="absolute left-4 md:left-8 -bottom-10 md:-bottom-12 z-20 w-24 h-24 md:w-36 md:h-36 rounded-full overflow-hidden shadow-xl border-4 border-white bg-white transition-transform duration-500 hover:scale-105">
+        <div className="absolute left-4 sm:left-6 md:left-10 lg:left-14 -bottom-10 sm:-bottom-11 md:-bottom-12 lg:-bottom-14 z-20 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white bg-white transition-transform duration-500 hover:scale-105">
           <img
             src={photoUrl}
             alt="Foto de Jair Costa Lopes Junior"
@@ -102,7 +102,7 @@ const ProfileHeader = () => (
       </div>
 
       {/* Action buttons row - below banner, aligned right */}
-      <div className="bg-white px-6 md:px-10 pt-4">
+      <div className="bg-white px-4 sm:px-6 md:px-10 lg:px-14 pt-4">
         <div className="flex justify-end flex-wrap gap-2 md:gap-3">
           <Button
             size="sm"
