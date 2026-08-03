@@ -4,10 +4,28 @@ import { Mail, Linkedin, Instagram, MessageCircle, MapPin, Cloud, Database, Brai
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-import bannerAsset from "@/assets/banner_novo_linkdin.png.asset.json";
-
-const bannerUrl = bannerAsset.url;
+import bannerBg from "@/assets/banner-bg.png";
+ 
 const photoUrl = "/lovable-uploads/profile-photo.png";
+
+// Heading + colored tag pills overlaid on the banner (responsive HTML for legibility)
+const bannerHeading =
+  "Inovação, Transformação Digital e Ambiental com Acessibilidade e Gestão Ágil";
+
+const bannerTags: { label: string; className: string }[] = [
+  { label: "IA", className: "bg-violet-600" },
+  { label: "Scrum", className: "bg-orange-500" },
+  { label: "Kanban", className: "bg-blue-600" },
+  { label: "OKR", className: "bg-emerald-600" },
+  { label: "PMI / PMBOK", className: "bg-rose-600" },
+  { label: "SQL", className: "bg-indigo-600" },
+  { label: "Design Thinking", className: "bg-pink-500" },
+  { label: "IoT", className: "bg-cyan-600" },
+  { label: "Data Engineering", className: "bg-amber-600" },
+  { label: "ESG", className: "bg-green-600" },
+  { label: "Smart Cities", className: "bg-sky-600" },
+  { label: "Acessibilidade", className: "bg-fuchsia-600" },
+];
 
 const resumoParagrafos = [
   "Profissional com mais de 30 anos de experiência em Tecnologia da Informação, atuando estrategicamente na interseção entre Engenharia de Dados, Análise de Dados, Inteligência Artificial (incluindo IA Generativa), Internet das Coisas (IoT), Governança Digital, Gestão Ágil e Transformação Digital.",
